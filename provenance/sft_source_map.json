@@ -1,0 +1,40 @@
+{
+  "archive": "a5_experiment_records_20261106.tar.gz",
+  "original_sha256": "391d0ac038bdba99d6271465c33bfdeb32c5670bee5dc7cdf7b22201fcef01f4",
+  "original": "original_implementation/sft/train_sft_a5_fp32.py",
+  "mapping": [
+    {
+      "original_lines": [
+        84,
+        115
+      ],
+      "maintained": "src/grpo_posttraining/sft.py:load_records,collate_records",
+      "change": "Validation added; same shared tokenization, no EOS insertion or truncation."
+    },
+    {
+      "original_lines": [
+        212,
+        261
+      ],
+      "maintained": "src/grpo_posttraining/sft.py:train",
+      "change": "Same parameter precision modes, AdamW defaults and checkpointing; local-only loading and fresh-run guards added."
+    },
+    {
+      "original_lines": [
+        284,
+        498
+      ],
+      "maintained": "src/grpo_posttraining/sft.py:train,microbatch",
+      "change": "Same response-summed loss/4, FP32 log-prob cast only in FP32 arm, clip 1.0 and one update per four microbatches."
+    },
+    {
+      "original_lines": [
+        500,
+        512
+      ],
+      "maintained": "src/grpo_posttraining/sft.py:train",
+      "change": "Model/tokenizer export only; no optimizer/RNG resume claim."
+    }
+  ],
+  "gpu_validation": "Historical original ran; maintained entry CPU-tested only."
+}

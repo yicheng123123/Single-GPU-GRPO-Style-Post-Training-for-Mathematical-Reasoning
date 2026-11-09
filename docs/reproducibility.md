@@ -19,6 +19,8 @@ checks with a ROCm training reproduction. A rebuild still needs the original ima
 | Command | Existing input / dependencies | Output | GPU |
 |---|---|---|---|
 | `python scripts/project.py check-config` | configs/train_grpo.json; stdlib | static config validation | No |
+| `python scripts/project.py sft-report --output .local/reports/sft-001` | included SFT metrics and 150 records; stdlib | summary.json | No |
+| `python scripts/project.py sft-figures --output .local/figures/sft-001` | same records + Matplotlib | two SVG/PNG figures, source hashes | No |
 | `python scripts/project.py doctor` | installed package metadata | version inventory, no GPU probe | No |
 | `python -m pytest -q --basetemp=.local/pytest-temp -p no:cacheprovider` | pytest + CPU torch | test results | No |
 | `python scripts/project.py report --output .local/reports/recomputed-001` | included records, metrics; stdlib | summary.json, REPORT.md | No |
@@ -38,6 +40,35 @@ python scripts/project.py audit-data --train /path/to/train-00000-of-00001.parqu
 
 The public data_isolation.json was computed using the unmodified private archive copies.
 The original dataset is not included in Git; metadata and hashes permit checking local copies.
+
+## SFT: historical records and maintained entry
+
+The SFT record set is separate from RL: 128 R1-derived substitute demonstrations,
+32 updates per precision arm, fixed 50-question development evaluation. See
+[measured results](sft_experiments.md) and [loss/precision details](sft.md).
+The archived SFT evaluator uses Hugging Face generation with temperature 1.0;
+the current vLLM `evaluate` command uses a separate protocol, not a drop-in replay.
+
+The following future training commands require an existing compatible GPU runtime,
+the original local Base and the training JSONL (SHA256 recorded in the data statistics):
+
+```sh
+python scripts/project.py sft-train --model /local/base --data /local/sft_128.jsonl --run-name sft-fp32-001 --precision fp32_bf16_autocast --execute-training
+python scripts/project.py sft-train --model /local/base --data /local/sft_128.jsonl --run-name sft-bf16-001 --precision bf16 --execute-training
+```
+
+Defaults: 1 epoch, LR 1e-5, microbatch 1, accumulation 4, max shifted length 2048,
+seed 42, clip 1.0, no EOS insertion. A 128-row input yields 32 updates.
+Outputs stay under ignored `.local/runs/sft/<name>`; existing directories are rejected.
+Model/tokenizer exports are not optimizer/RNG resume checkpoints. Callers must supply
+an authenticated Base; marker-file checks only reject obvious trained-run directories.
+The refactored loop was exercised on tiny CPU models in both precision modes;
+no GPU reproduction of this new entry was performed.
+
+Original archive code is exposed under [original_implementation](../original_implementation/README.md).
+Use maintained commands for new work: original scripts assume the old layout and may
+overwrite results. SFT checkpoints in the evidence backup contain metadata/tokenizer only,
+not reloadable model weights. No automatic download or dependency installation is provided.
 
 ## Future GPU evaluation: NOT executed here
 

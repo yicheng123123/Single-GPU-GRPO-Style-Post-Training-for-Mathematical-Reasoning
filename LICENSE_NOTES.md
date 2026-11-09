@@ -19,7 +19,14 @@ invented license is made. These notes document observed notices rather than auth
   The run names a ModelScope mirror. Its exact acquisition/license chain is not authenticated
   by the archive; Train/Test parquet is excluded from Git. Selected evaluation questions/responses
   are included for audit, with their dataset attribution retained.
-- **New project work:** author attribution and the desired license for new changes require owner review
-  before public publication. Preserve all upstream notices. CPU success is not a publication-rights certificate.
+- **SFT substitute training data:** upstream R1 dataset revision and license chain are not
+  authenticated by the backup. Raw training trajectories are not redistributed; only hashes,
+  lengths and aggregate statistics are published. Generated MATH evaluation records are
+  separately attributed to their benchmark inputs.
+- **New project work:** the owner authorized publication of selected original source and
+  maintained packaging changes. No new blanket license is assigned to this mixed-provenance
+  repository. Preserve the course and third-party notices; archive hashes authenticate bytes,
+  not historical personal authorship.
 
-Checks were read-only on 2026-11-09; no GitHub repository was changed or pushed.
+The initial license-source checks were read-only on 2026-11-09. Subsequent source and
+documentation publication is described in Git history and provenance manifests.

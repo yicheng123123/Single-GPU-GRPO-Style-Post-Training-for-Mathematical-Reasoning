@@ -1,0 +1,18 @@
+{
+  "data": "<LOCAL_R1_128_JSONL>",
+  "model": "<LOCAL_QWEN_BASE>",
+  "output": "<LOCAL_SFT_OUTPUT>",
+  "epochs": 1,
+  "lr": 1e-05,
+  "grad_accum": 4,
+  "max_updates": 0,
+  "max_seq_len": 2048,
+  "seed": 42,
+  "torch_version": "2.12.0+git6bbd260",
+  "gpu": "",
+  "cuda_version": null,
+  "rocm_version": "7.2.53211",
+  "dtype": "bfloat16",
+  "microbatch_size": 1,
+  "loss_normalize_constant": 1.0
+}

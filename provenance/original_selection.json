@@ -1,0 +1,297 @@
+{
+  "archives": [
+    {
+      "name": "a5_experiment_records_20261106.tar.gz",
+      "bytes": 5733959,
+      "sha256": "4a7e9eaca8ffcf2d9f5cdf78ad0754d5540b214c42bb8987d102ec7e27c35023"
+    },
+    {
+      "name": "a5_code_results_backup.tar.gz",
+      "bytes": 11659559,
+      "sha256": "52f4fd7b70f4b481bd12fc3b93c653b8552f48be3bdb9555ca0b123f2e8c13f1"
+    }
+  ],
+  "categories": {
+    "A": "Publish selected original bytes",
+    "B": "Integrate or preserve existing maintained counterpart",
+    "C": "Curated experiment/test evidence",
+    "D": "Private duplicate or exploration"
+  },
+  "python_inventory": [
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "train_sft_a5.py",
+      "sha256": "9b25a170378b7dcb402c142a96c5d9461c3315ab3c0a82d55bf2bb9b2d3282a3",
+      "bytes": 14052,
+      "category": "B",
+      "reason": "Integrated into maintained modules; source hashes/diffs preserve lineage without whole-file duplication."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "train_sft_a5_fp32.py",
+      "sha256": "391d0ac038bdba99d6271465c33bfdeb32c5670bee5dc7cdf7b22201fcef01f4",
+      "bytes": 14226,
+      "category": "A",
+      "reason": "Representative historical SFT training/evaluation implementation."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "eval_sft_math.py",
+      "sha256": "87525bead63341d63484cf6d77ee606c1adddc77e8519df337a86f39592acaf6",
+      "bytes": 6724,
+      "category": "A",
+      "reason": "Representative historical SFT training/evaluation implementation."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "tests/adapters.py",
+      "sha256": "5566c6e8587bca54f844b21f0ccc7126a5216ce7ed10c215e31c607448102d2d",
+      "bytes": 16218,
+      "category": "D",
+      "reason": "Duplicate, early exploration or unused course extension; retained privately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "cs336_alignment/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "category": "D",
+      "reason": "Duplicate, early exploration or unused course extension; retained privately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "cs336_alignment/drgrpo_grader.py",
+      "sha256": "f88b29b0e76b3c28f969cb8b2f945e01b70aed2753306445d30822a192c54ec7",
+      "bytes": 29434,
+      "category": "B",
+      "reason": "Already published byte-identically as attributed grader.py."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "audit_grpo_answers.py",
+      "sha256": "cb10eb4030425afbdcf0c8ca6786af1b182ce7c2c0d4b036bd2064de4cbe0028",
+      "bytes": 6505,
+      "category": "A",
+      "reason": "Original answer-extraction diagnostic, separate from official reward."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "eval_grpo_a5.py",
+      "sha256": "645ce9c6ffd22543fe6ca8fa34f4bb09fa0c28455be548918538a84b65dc5712",
+      "bytes": 8992,
+      "category": "B",
+      "reason": "Integrated into maintained modules; source hashes/diffs preserve lineage without whole-file duplication."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "eval_sft_math.py",
+      "sha256": "87525bead63341d63484cf6d77ee606c1adddc77e8519df337a86f39592acaf6",
+      "bytes": 6724,
+      "category": "D",
+      "reason": "Duplicate, early exploration or unused course extension; retained privately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "grpo_batch_smoke.py",
+      "sha256": "2a5325a157a21fdeb2b5bf02bafc9e764a4ca2caa5149c1cc6c1bbd24675cae9",
+      "bytes": 5400,
+      "category": "D",
+      "reason": "Duplicate, early exploration or unused course extension; retained privately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "grpo_rollout_r1zero.py",
+      "sha256": "4867d6a918b65252fa3fa081854b53d624a00664f1f7f43e2b7ee2f54be2c732",
+      "bytes": 2315,
+      "category": "D",
+      "reason": "Duplicate, early exploration or unused course extension; retained privately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "grpo_rollout_smoke.py",
+      "sha256": "90e78d59124d69f9dba36f6379681f3354c213b3e153fef3c2f5aeaf8d9d6642",
+      "bytes": 4604,
+      "category": "D",
+      "reason": "Duplicate, early exploration or unused course extension; retained privately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "train_grpo_a5.py",
+      "sha256": "7c856196316b73faa86d6fbd319deaeb884ff43bf4dfbb22927fa9be1158b719",
+      "bytes": 20861,
+      "category": "B",
+      "reason": "Integrated into maintained modules; source hashes/diffs preserve lineage without whole-file duplication."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "train_grpo_a5_before_dataset_fix.py",
+      "sha256": "3f83f7e5eec2e87133277507df2eeb079776622f9f10f505bcd621bb1017064f",
+      "bytes": 18250,
+      "category": "D",
+      "reason": "Duplicate, early exploration or unused course extension; retained privately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "train_grpo_a5_before_storage_fix.py",
+      "sha256": "37a4e6cc44863b46807e03a587517775c365a662fc306bddf5d114d065baa3b6",
+      "bytes": 20861,
+      "category": "D",
+      "reason": "Duplicate, early exploration or unused course extension; retained privately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "train_grpo_a5_old.py",
+      "sha256": "2cfd0367d25fdc0fb044a32adb85de116ccec7450e362885d0942ae5cd984a4d",
+      "bytes": 2171,
+      "category": "D",
+      "reason": "Duplicate, early exploration or unused course extension; retained privately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "train_sft_a5.py",
+      "sha256": "9b25a170378b7dcb402c142a96c5d9461c3315ab3c0a82d55bf2bb9b2d3282a3",
+      "bytes": 14052,
+      "category": "B",
+      "reason": "Integrated into maintained modules; source hashes/diffs preserve lineage without whole-file duplication."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "train_sft_a5_fp32.py",
+      "sha256": "391d0ac038bdba99d6271465c33bfdeb32c5670bee5dc7cdf7b22201fcef01f4",
+      "bytes": 14226,
+      "category": "D",
+      "reason": "Duplicate, early exploration or unused course extension; retained privately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "cs336_alignment/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "category": "D",
+      "reason": "Duplicate, early exploration or unused course extension; retained privately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "cs336_alignment/drgrpo_grader.py",
+      "sha256": "f88b29b0e76b3c28f969cb8b2f945e01b70aed2753306445d30822a192c54ec7",
+      "bytes": 29434,
+      "category": "B",
+      "reason": "Already published byte-identically as attributed grader.py."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "category": "D",
+      "reason": "Duplicate, early exploration or unused course extension; retained privately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/adapters.py",
+      "sha256": "99adf0ae517bf64d55342d4e3e02d72cd22cce81b09e0e74eadb98921e0aa424",
+      "bytes": 16806,
+      "category": "A",
+      "reason": "Completed core bodies, with course interfaces and remaining optional stubs visible."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/common.py",
+      "sha256": "a049c29e83b673f13088f91aadbfd746ffb940f06f652159ff64e3227eab3fde",
+      "bytes": 87,
+      "category": "D",
+      "reason": "Duplicate, early exploration or unused course extension; retained privately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/conftest.py",
+      "sha256": "93be2ebc84f1f332b35972ccb3fabceb62d6800b7dc69331c3954f1b486e15d7",
+      "bytes": 9452,
+      "category": "C",
+      "reason": "Course test inventory retained; maintained CPU tests use toy fixtures rather than downloading the original model."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/test_data.py",
+      "sha256": "8c74c2ce265c6f05e40a80ff0cfcdae1f445f240497a59452de816dcee68ca1f",
+      "bytes": 3060,
+      "category": "C",
+      "reason": "Course test inventory retained; maintained CPU tests use toy fixtures rather than downloading the original model."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/test_dpo.py",
+      "sha256": "1f2ebb83f5f1e5612d1559f1e64ff8b1ed1e1bfa0bbdee57a7b87602239550d8",
+      "bytes": 882,
+      "category": "C",
+      "reason": "Course test inventory retained; maintained CPU tests use toy fixtures rather than downloading the original model."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/test_grpo.py",
+      "sha256": "59d5810440de6daaf0aa0408cf1fe7f87a79c030b573c53b4b4e5531905faecf",
+      "bytes": 6534,
+      "category": "C",
+      "reason": "Course test inventory retained; maintained CPU tests use toy fixtures rather than downloading the original model."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/test_metrics.py",
+      "sha256": "dcc67e3fb747443b57e3679b9fddf31c9d7743d0ca86b65a89e1307a192c28b9",
+      "bytes": 1712,
+      "category": "C",
+      "reason": "Course test inventory retained; maintained CPU tests use toy fixtures rather than downloading the original model."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/test_sft.py",
+      "sha256": "6b6e80e8cdce8c835a6dc44b0f59d62d43d696c11885f6d885ad68bb0347fad0",
+      "bytes": 3871,
+      "category": "C",
+      "reason": "Course test inventory retained; maintained CPU tests use toy fixtures rather than downloading the original model."
+    }
+  ],
+  "published_originals": [
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "train_sft_a5_fp32.py",
+      "sha256": "391d0ac038bdba99d6271465c33bfdeb32c5670bee5dc7cdf7b22201fcef01f4",
+      "bytes": 14226,
+      "category": "A",
+      "reason": "Representative historical SFT training/evaluation implementation.",
+      "published_path": "original_implementation/sft/train_sft_a5_fp32.py",
+      "byte_identical": true
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "eval_sft_math.py",
+      "sha256": "87525bead63341d63484cf6d77ee606c1adddc77e8519df337a86f39592acaf6",
+      "bytes": 6724,
+      "category": "A",
+      "reason": "Representative historical SFT training/evaluation implementation.",
+      "published_path": "original_implementation/sft/eval_sft_math.py",
+      "byte_identical": true
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "audit_grpo_answers.py",
+      "sha256": "cb10eb4030425afbdcf0c8ca6786af1b182ce7c2c0d4b036bd2064de4cbe0028",
+      "bytes": 6505,
+      "category": "A",
+      "reason": "Original answer-extraction diagnostic, separate from official reward.",
+      "published_path": "original_implementation/grpo/audit_grpo_answers.py",
+      "byte_identical": true
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/adapters.py",
+      "sha256": "99adf0ae517bf64d55342d4e3e02d72cd22cce81b09e0e74eadb98921e0aa424",
+      "bytes": 16806,
+      "category": "A",
+      "reason": "Completed core bodies, with course interfaces and remaining optional stubs visible.",
+      "published_path": "original_implementation/adapters.py",
+      "byte_identical": true
+    }
+  ],
+  "evidence": "results/sft contains byte-identical metrics and 150 model-generated evaluation records; configs sanitized; training data replaced by hash/length statistics."
+}

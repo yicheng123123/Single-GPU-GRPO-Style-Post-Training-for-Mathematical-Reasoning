@@ -1,0 +1,29 @@
+{
+  "source_sha256": {
+    "results/sft/bf16/train_metrics.jsonl": "39a203a7bd1a43da9c3c509e171161676c6a8caed5d265bf07a62ad5feac5010",
+    "results/sft/fp32/train_metrics.jsonl": "ef91d1efa6255f53af717a8ba7211562afcad0934988fdf4188c39f089dd50c5",
+    "results/sft/evaluation/base.jsonl": "afd4a9d0ceca107169e53bf768399b2aac615622142b40cf80a17e802d0d8340",
+    "results/sft/evaluation/bf16.jsonl": "58f40a4b1888d381c7846213fc4c00cbc47f525d075ad2ffbeac90c3fa530bce",
+    "results/sft/evaluation/fp32.jsonl": "f9d37877fb7d4da306395cbb541914c02bb1af607b4b88dce55b696d7f7a14b3"
+  },
+  "figures": [
+    "sft_training_nll.svg",
+    "sft_vs_base.svg"
+  ],
+  "conditions": {
+    "n": 50,
+    "seed": 42,
+    "per_question_seed": "42 + dataset_index",
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "max_new_tokens": 1024,
+    "stop_strings": [
+      "</answer>"
+    ],
+    "parameters": "FP32",
+    "forward": "BF16 autocast",
+    "eos_observation": "No raw IDs or finish reason archived; hitting cap is not proof of no EOS"
+  },
+  "gpu_used": false
+}

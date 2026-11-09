@@ -72,6 +72,14 @@ def main():
     c=sub.add_parser('train');c.add_argument('--model',required=True);c.add_argument('--train-parquet',required=True)
     c.add_argument('--config',default=str(ROOT/'configs/train_grpo.json'));c.add_argument('--run-name',required=True);c.add_argument('--max-steps',type=int,required=True)
     c.add_argument('--resume',action='store_true');c.add_argument('--execute-training',action='store_true')
+    for command in ('sft-report','sft-figures'):
+        c=sub.add_parser(command);c.add_argument('--output',required=True)
+    c=sub.add_parser('sft-train');c.add_argument('--model',required=True);c.add_argument('--data',required=True)
+    c.add_argument('--run-name',required=True);c.add_argument('--precision',choices=['bf16','fp32_bf16_autocast'],default='fp32_bf16_autocast')
+    c.add_argument('--epochs',type=int,default=1);c.add_argument('--lr',type=float,default=1e-5)
+    c.add_argument('--grad-accum',type=int,default=4);c.add_argument('--max-seq-len',type=int,default=2048)
+    c.add_argument('--max-updates',type=int,default=0);c.add_argument('--seed',type=int,default=42)
+    c.add_argument('--execute-training',action='store_true')
     args=p.parse_args()
     try:
         if args.command=='check-config':result=check_config(args.config)
@@ -88,6 +96,12 @@ def main():
             from .evaluation import compare
             result=compare(args.left,args.right,args.output)
         elif args.command=='train':result=training(args)
+        elif args.command=='sft-train':
+            from .sft import train
+            result=train(args)
+        elif args.command in ('sft-report','sft-figures'):
+            from . import sft_analysis
+            result=getattr(sft_analysis,args.command.removeprefix('sft-'))(args.output)
         else:
             from . import analysis
             if args.command=='audit-data':result=analysis.audit_data(args.train,args.test,args.legacy_dir,args.output)

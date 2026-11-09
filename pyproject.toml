@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "single-gpu-grpo-posttraining"
 version = "0.1.0"
-description = "Auditable CS336 A5 extension: single-GPU GRPO-style mathematical post-training"
+description = "CS336 A5 extension: single-GPU SFT and group-relative mathematical post-training"
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
 dependencies = []

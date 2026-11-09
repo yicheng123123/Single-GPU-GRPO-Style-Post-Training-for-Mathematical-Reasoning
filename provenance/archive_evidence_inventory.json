@@ -1,0 +1,2525 @@
+{
+  "scope": "Non-Python members of both code/evidence archives; Python inventory is original_selection.json. Model tensor archive is inventoried separately.",
+  "members": [
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "cs336_alignment/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 153,
+      "sha256": "fdac7e99d948c77d316df53ddc56640bdbc9692032c808bf387dea5baec555fd",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "cs336_alignment/__pycache__/drgrpo_grader.cpython-312.pyc",
+      "bytes": 30870,
+      "sha256": "4fe6d37c3049e95baaf91dd6b62541f548f71ce3de658be8050748d36139640c",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "cs336_alignment/prompts/alpaca_sft.prompt",
+      "bytes": 164,
+      "sha256": "fbd4a4672e92a2ecb3a849a6417ce7be683dc02382edc11a9ce0d58a9ac9449e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "cs336_alignment/prompts/question_only.prompt",
+      "bytes": 10,
+      "sha256": "bf085a6e12c9d0e23a9dd157df084f933b2ef021caba82def1494bfb84a723c9",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "cs336_alignment/prompts/r1_zero.prompt",
+      "bytes": 449,
+      "sha256": "56213732da87e12ace60a2b88a16df0af18280fb0563a957cbecc938a6a2ac0e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "cs336_alignment/prompts/zero_shot_system_prompt.prompt",
+      "bytes": 708,
+      "sha256": "1b4854e31925e2823f701de2d7ac895297dbae563d03077a68713ef420075180",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "data/r1_sft/sft_128_math_train.jsonl",
+      "bytes": 545855,
+      "sha256": "5f0d87ba8d7f4f4d1230a9ca5be4c77bdb416e2ff03c643789e9b2ff0b4a9319",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "data/eval/math_test.jsonl",
+      "bytes": 4176331,
+      "sha256": "5d8fcf43998d7c8045e33e9a9cee364e71767968b2d42dd921a17dce8d6831f4",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "evaluations/math_test_n3_seed42/base.jsonl",
+      "bytes": 5453,
+      "sha256": "8b0a8bd1af790a5a1815a0f2cac7c197e8c8ccd9433ab3e482317bb5ca2003d4",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "evaluations/math_test_n3_seed42/bf16.jsonl",
+      "bytes": 12306,
+      "sha256": "75ac0706a837876dc36d0a4d656593f64497356d2b8b89ca809f28d22e1c186d",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "evaluations/math_test_n3_seed42/eval_indices.json",
+      "bytes": 18,
+      "sha256": "a2fa94e42fb423e49c484006989695f302cb2ecdebb94a847ae451e59ca0b369",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "evaluations/math_test_n3_seed42/fp32.jsonl",
+      "bytes": 10668,
+      "sha256": "d90b3542dea0a0b4e69c7a3878e12bd11c3c96e2a1d7941045939faefe8d3c1a",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "evaluations/math_test_n3_seed42/summary.json",
+      "bytes": 835,
+      "sha256": "b1393802d73e4e80c5f6cd9c29b8a40d1d9a657b61b1051aedbb1ce319e98bcb",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "evaluations/math_test_n50_seed42/base.jsonl",
+      "bytes": 75069,
+      "sha256": "afd4a9d0ceca107169e53bf768399b2aac615622142b40cf80a17e802d0d8340",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "evaluations/math_test_n50_seed42/bf16.jsonl",
+      "bytes": 133589,
+      "sha256": "58f40a4b1888d381c7846213fc4c00cbc47f525d075ad2ffbeac90c3fa530bce",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "evaluations/math_test_n50_seed42/eval_indices.json",
+      "bytes": 286,
+      "sha256": "eba8e3f2e8a6114d1e1bf692e8d0075f3e853345b83a6cb16f07c336fea2c402",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "evaluations/math_test_n50_seed42/fp32.jsonl",
+      "bytes": 171656,
+      "sha256": "f9d37877fb7d4da306395cbb541914c02bb1af607b4b88dce55b696d7f7a14b3",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "evaluations/math_test_n50_seed42/summary.json",
+      "bytes": 798,
+      "sha256": "db4344dd518990ae6fc6cfa0b72ef95c52663305cd0af460e42f0c45f5fe96ae",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "evaluations_diagnostic_2048/math_test_n3_seed42/eval_indices.json",
+      "bytes": 18,
+      "sha256": "a2fa94e42fb423e49c484006989695f302cb2ecdebb94a847ae451e59ca0b369",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "evaluations_diagnostic_2048/math_test_n3_seed42/fp32.jsonl",
+      "bytes": 15609,
+      "sha256": "20f970df0b1ba40aed4d1c9d46dd02c37e4a960752d00eab1ecc2986ccd89a00",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "evaluations_diagnostic_2048/math_test_n3_seed42/summary.json",
+      "bytes": 292,
+      "sha256": "64ff4e0f287ea72eee5c326d97f2b5712915a561e204c3a9f9a2db0132594285",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "checkpoints/a5_sft_128_full/chat_template.jinja",
+      "bytes": 2513,
+      "sha256": "c564d12c9977b8942423753b0c409a11f50142508ced170e9fe1c2f5b803cf70",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "checkpoints/a5_sft_128_full/config.json",
+      "bytes": 1390,
+      "sha256": "b679fb4eec6c59032d80de42dfb7cf50647f4b8f2a9cc4e065696e7df553cf99",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "checkpoints/a5_sft_128_full/generation_config.json",
+      "bytes": 139,
+      "sha256": "b9c7db969a66eb1b0bdec913124f92ceabaec624630bbced7778b8f3452a2bee",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "checkpoints/a5_sft_128_full/run_config.json",
+      "bytes": 479,
+      "sha256": "829bf5528342b45a44e16357b113469751231781c548de49fa9b35059e45108d",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "checkpoints/a5_sft_128_full/tokenizer.json",
+      "bytes": 11421892,
+      "sha256": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "checkpoints/a5_sft_128_full/tokenizer_config.json",
+      "bytes": 696,
+      "sha256": "5f007d04324afa93876e2a484190e868136c69dfe0e1a29a1063eae583df9d32",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "checkpoints/a5_sft_128_full/train_metrics.jsonl",
+      "bytes": 10165,
+      "sha256": "39a203a7bd1a43da9c3c509e171161676c6a8caed5d265bf07a62ad5feac5010",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "checkpoints/a5_sft_128_fp32_full/chat_template.jinja",
+      "bytes": 2513,
+      "sha256": "c564d12c9977b8942423753b0c409a11f50142508ced170e9fe1c2f5b803cf70",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "checkpoints/a5_sft_128_fp32_full/config.json",
+      "bytes": 1389,
+      "sha256": "32b106d84b1ce0097ebba940811995a05d6202db69c589892eb7e71ebdd8c63c",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "checkpoints/a5_sft_128_fp32_full/generation_config.json",
+      "bytes": 139,
+      "sha256": "b9c7db969a66eb1b0bdec913124f92ceabaec624630bbced7778b8f3452a2bee",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "checkpoints/a5_sft_128_fp32_full/run_config.json",
+      "bytes": 505,
+      "sha256": "f803b5700fd930a61cc7f24152add5b9055fb38a9297a5396089ed79f89b1b61",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "checkpoints/a5_sft_128_fp32_full/tokenizer.json",
+      "bytes": 11421892,
+      "sha256": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "checkpoints/a5_sft_128_fp32_full/tokenizer_config.json",
+      "bytes": 696,
+      "sha256": "5f007d04324afa93876e2a484190e868136c69dfe0e1a29a1063eae583df9d32",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "checkpoints/a5_sft_128_fp32_full/train_metrics.jsonl",
+      "bytes": 10886,
+      "sha256": "ef91d1efa6255f53af717a8ba7211562afcad0934988fdf4188c39f089dd50c5",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_experiment_records_20261106.tar.gz",
+      "path": "environment_freeze.txt",
+      "bytes": 6591,
+      "sha256": "b958410106e1e646418fb435339762047682a0d50a4b5e4a85c34a5699c369e4",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "pyproject.toml",
+      "bytes": 1024,
+      "sha256": "75eb779572ceb66453fe33a9d1bd64cd1fc67fbe06849359879a356608969892",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "requirements-a5-rocm.txt",
+      "bytes": 199,
+      "sha256": "f3be36e588363a42b152d91264729f09a560aa5ae9ff97bdd45fcd63d2487c17",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "a5_package_versions.txt",
+      "bytes": 5560,
+      "sha256": "c67566b42ff1edeb68535c3ab7155e1cb3f4ffe24cb18fb051963f624fcf98e1",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "a5_git_status.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "a5_git_commit.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "a5_uncommitted_changes.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "model_path.txt",
+      "bytes": 74,
+      "sha256": "4ef688fa57371b429e8383853935e50f3a8d9bf29562724b47045e8cbb0b194c",
+      "category": "D",
+      "reason": "Private local configuration; contents not published."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "cs336_alignment/prompts/alpaca_sft.prompt",
+      "bytes": 164,
+      "sha256": "fbd4a4672e92a2ecb3a849a6417ce7be683dc02382edc11a9ce0d58a9ac9449e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "cs336_alignment/prompts/question_only.prompt",
+      "bytes": 10,
+      "sha256": "bf085a6e12c9d0e23a9dd157df084f933b2ef021caba82def1494bfb84a723c9",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "cs336_alignment/prompts/r1_zero.prompt",
+      "bytes": 449,
+      "sha256": "56213732da87e12ace60a2b88a16df0af18280fb0563a957cbecc938a6a2ac0e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "cs336_alignment/prompts/zero_shot_system_prompt.prompt",
+      "bytes": 708,
+      "sha256": "1b4854e31925e2823f701de2d7ac895297dbae563d03077a68713ef420075180",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_compute_entropy.npz",
+      "bytes": 344,
+      "sha256": "3d8cd4be5c6d4479d028aa51ca8602a80af7fdf29b406a4a83357c25d27c0bb8",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_compute_group_normalized_rewards_no_normalize_by_std.npz",
+      "bytes": 608,
+      "sha256": "3814361d1f930fda03076e5963ba90791fdeb790574055e44c246e3c12a92313",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_compute_group_normalized_rewards_normalize_by_std.npz",
+      "bytes": 608,
+      "sha256": "fd2096c5c37b42e3474bec0c17d99e16d5d74b9b83f532d9f5a79f88643b332a",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_compute_grpo_clip_loss_large_cliprange.npz",
+      "bytes": 344,
+      "sha256": "a048ad26f2299300b2cd47f1cf151613d129c4678276d0ef80167b7a8d69bc1d",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_compute_grpo_clip_loss_small_cliprange.npz",
+      "bytes": 344,
+      "sha256": "95293a5279d24a353e9b4be1d52a65656af81440cec14b94e8afd7759b3c0667",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_compute_naive_policy_gradient_loss.npz",
+      "bytes": 344,
+      "sha256": "fca7fc1dc2971bb3e644114998f61d911290d0d469f3836ddf2fd56dc1c10fd3",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_compute_policy_gradient_loss_grpo_clip.npz",
+      "bytes": 344,
+      "sha256": "931d0003f5d014b57a1992fc2a2a850e1d996d817ee986f68baa9dff27c70bdc",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_compute_policy_gradient_loss_no_baseline.npz",
+      "bytes": 344,
+      "sha256": "fca7fc1dc2971bb3e644114998f61d911290d0d469f3836ddf2fd56dc1c10fd3",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_compute_policy_gradient_loss_reinforce_with_baseline.npz",
+      "bytes": 344,
+      "sha256": "0d5c00a920ae18795ffb9c0b20994def6f4d1eb383661d751ad8ea05df74398a",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_get_response_log_probs.npz",
+      "bytes": 690,
+      "sha256": "c445f15fc0054c1548099472c77271124f50c0a89827b676229472e7fa759c9c",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_grpo_microbatch_train_step_grpo_clip.npz",
+      "bytes": 620,
+      "sha256": "c1d7d0ff19fdb2bd587e3365b1927f361e2494206b94c21f9a0d8b9d3754d63d",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_grpo_microbatch_train_step_grpo_clip_10_steps.npz",
+      "bytes": 1376,
+      "sha256": "9b4ae936614b84f8f67a91cdee956caeb5f1343df3d934897d45cc05c8ecebca",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_masked_mean_dim0.npz",
+      "bytes": 4264,
+      "sha256": "9a6f949eb7ca696fd40f5c4fc561f434d33590641215188db88828a43aaf17e6",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_masked_mean_dim1.npz",
+      "bytes": 1064,
+      "sha256": "d5be26d61ffa2609a2923c8ffc695c38e3c0a199162bef230684478ebedd6aaa",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_masked_mean_dimNone.npz",
+      "bytes": 268,
+      "sha256": "8d5df86abf5bb58f3e55baff4ab31d708902252e6c6f0b7a62f68e074cd52c8a",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_masked_mean_dimlast.npz",
+      "bytes": 344,
+      "sha256": "c53141105fe0bb70bab1d1b2c8d1e6dd9f8e2d5b6bbbfee28b982a6083512e49",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_masked_normalize_dim0.npz",
+      "bytes": 4264,
+      "sha256": "86a8108506996fe8c94d26455515f3ac05e12a90f944f1576e4f2eef3fa67772",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_masked_normalize_dim1.npz",
+      "bytes": 1064,
+      "sha256": "38cc625b767c4e62551a7c85f45bda76933f61ff2b19f42071740296ea9e0d03",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_masked_normalize_dimNone.npz",
+      "bytes": 268,
+      "sha256": "c0ea13896feee95d724c6e04492a16c6d84a9fbdb834975f991618bea2638bf0",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_masked_normalize_dimlast.npz",
+      "bytes": 344,
+      "sha256": "330a14be66ac4b73eb86014478d42367e2297f20fb57222a575e55e843dddbb8",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_sft_microbatch_train_step.npz",
+      "bytes": 620,
+      "sha256": "090f16b773cabb0da1759f45ed1e30aae228b6ea2b658a9dd350b2ccd439e873",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_sft_microbatch_train_step_10_steps.npz",
+      "bytes": 1376,
+      "sha256": "fb04549e359b24d1bbe2841a679ef3d57fffa33d0d536ca0c0a42edf97d27635",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_sft_microbatch_train_step_normalize.npz",
+      "bytes": 620,
+      "sha256": "1c2074c480799bdf0cf0d359aef5bc93eacf87ea6718df8c4f970e4f51270762",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/_snapshots/test_tokenize_prompt_and_output.npz",
+      "bytes": 1233,
+      "sha256": "bd1576224fc524510a9f88da602ce847a222b00ab13c26bf0d5ba4886b69ae81",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/adapters.py.before_grpo_sync",
+      "bytes": 16218,
+      "sha256": "5566c6e8587bca54f844b21f0ccc7126a5216ce7ed10c215e31c607448102d2d",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/fixtures/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/fixtures/Meta-Llama-3-8B/special_tokens_map.json",
+      "bytes": 73,
+      "sha256": "462d91939dbc37178aa5a3eae7068d1990ccc92e09f288cc71f42cdf139d69cc",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/fixtures/Meta-Llama-3-8B/tokenizer.json",
+      "bytes": 9085698,
+      "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/fixtures/Meta-Llama-3-8B/tokenizer_config.json",
+      "bytes": 50566,
+      "sha256": "690727b4fed286383df1c7ca5e805124cb70c6eb4529f807c7b2e60ff741da7e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/fixtures/sft_sample.jsonl",
+      "bytes": 11063,
+      "sha256": "61fe0ec8aead1964eadc69794ab2ae4bc1861c7a3ee0dcb836a10ac5d0614e52",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/fixtures/tiny-gpt2/config.json",
+      "bytes": 765,
+      "sha256": "daab6ca26bc529b3eec8059da4450d91f22176efc74d784434e68d6909211e82",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/fixtures/tiny-gpt2/generation_config.json",
+      "bytes": 119,
+      "sha256": "92b549eb4e73b7c7224637429c8c97938595fe6b676e2ac7450451938ae7f5f3",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/fixtures/tiny-gpt2-ref/config.json",
+      "bytes": 765,
+      "sha256": "daab6ca26bc529b3eec8059da4450d91f22176efc74d784434e68d6909211e82",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/fixtures/tiny-gpt2-ref/generation_config.json",
+      "bytes": 119,
+      "sha256": "92b549eb4e73b7c7224637429c8c97938595fe6b676e2ac7450451938ae7f5f3",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "tests/fixtures/tokenized_sft_sample.json",
+      "bytes": 90170,
+      "sha256": "daaa030bf9a84aed95ab0d135991cdda61f9b9fe10cab9705fb39b3739ea3e51",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "data/math_full/data/test-00000-of-00001.parquet",
+      "bytes": 1855870,
+      "sha256": "7dca8d6e41af88ecf82f2b5f36eb5530e083aaaa86ee325f62bd5c31535178c6",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "data/math_full/data/train-00000-of-00001.parquet",
+      "bytes": 2992151,
+      "sha256": "eca6e667f4305dd5e5ba09b4fd55e7f3174a0fbe361cdfd4c44758b593a76933",
+      "category": "D",
+      "reason": "Raw dataset or redundant fixture; preserve locally, do not redistribute."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/excluded_invalid_answers.json",
+      "bytes": 188,
+      "sha256": "48f60a9c452e9eac75117cf9b4ff4507532e7503971d8b2d2e4b3fbb47ab317c",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/latest_checkpoint.json",
+      "bytes": 126,
+      "sha256": "ed40e6e98fe7b6ebc7956bfa741e1dc9c8da5e2440ef1e5cac4883e505d93a8c",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/metrics.jsonl",
+      "bytes": 37870,
+      "sha256": "4a621531ccbe87e7dbdd6bfca22641c1afd82ee18105f92fd2cdf7dae3b3c64a",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0000_request.json",
+      "bytes": 21888,
+      "sha256": "369ad63c11009f9841c2c9b0044c04613381cc0b854402008af2992995829641",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0000_responses.json",
+      "bytes": 276848,
+      "sha256": "8bafaa06e98315d9364b5b54a2faee0342942200b1f82584967d561e044927ab",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0001_request.json",
+      "bytes": 21825,
+      "sha256": "5729c18c9bee64e23b4f8f3f7c9146b9f78faf22a5abf87f6647fdefaf75963b",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0001_responses.json",
+      "bytes": 277682,
+      "sha256": "4572abe057e3ad2cad2a096f4c2b57811ffa37b40f792b0d55d7de3c10bffbd3",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0002_request.json",
+      "bytes": 22178,
+      "sha256": "de1b07180780251f83062502db2b7b0e44f022bef8f1af5a31ac9e20c4fa001e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0002_responses.json",
+      "bytes": 199151,
+      "sha256": "6cce1532556df13e0668fb22ce6a52eee52fe17dfd2b9f49e5ab0c9d409ddd41",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0003_request.json",
+      "bytes": 20315,
+      "sha256": "5c02dfa6b3706f279d2f8d342117d4b823c159cff25ddbcb7c85abbb8d09030b",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0003_responses.json",
+      "bytes": 149562,
+      "sha256": "9be8253a681b92a3bab7560c82dac5b2ea6921b0e3c7301ee5ce281d33cd58dc",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0004_request.json",
+      "bytes": 20154,
+      "sha256": "9887c0983c7ffc8311f5d0616da99e2b6a5139e53f2663cc18f47383bc39e825",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0004_responses.json",
+      "bytes": 88116,
+      "sha256": "92d7a9b6e313062de1f437f9de90a7c3327ad773bd22375f37136bb07e887e23",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0005_request.json",
+      "bytes": 25120,
+      "sha256": "e1d9906aadafc0505633ad3ccbadbf4dc18b3ce9af5c2ce993170333fb3cdc54",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0005_responses.json",
+      "bytes": 204148,
+      "sha256": "4c8363d02eb47e0ae9d7d24ee05ddcdd094a3692389d32c09dff286ff97678ea",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0006_request.json",
+      "bytes": 19328,
+      "sha256": "0391dbf3650710f9897d805618754080403d84538372a74e29151c3dd965d724",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0006_responses.json",
+      "bytes": 180380,
+      "sha256": "cce2ade1c994f702a920fc580dcf345a1a312bb5f951d313bc34c66b229f610e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0007_request.json",
+      "bytes": 20671,
+      "sha256": "8ca9e5d5694936d3eb0f13d63bcaa8c2478ba2f1c35b3442e5c47739c410c9c1",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0007_responses.json",
+      "bytes": 193895,
+      "sha256": "4149cbf7a71ac3ffbbad4d41b86beb93a583c2c97329aba0b3253213a7feef78",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0008_request.json",
+      "bytes": 22749,
+      "sha256": "8d19d4522e5fec9b2bfb7865aedca24cd6cb8111d0113b8631b4bc021b50c50c",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0008_responses.json",
+      "bytes": 189755,
+      "sha256": "bc6bc30f3b08e78d11eaf27aad5367c2d12a5d1efa4966c34f03f9ca83085528",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0009_request.json",
+      "bytes": 22710,
+      "sha256": "43f0bd30f96861242f427031b4f1272b4c038c7c23c800b98e6b2ba50b893664",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0009_responses.json",
+      "bytes": 139845,
+      "sha256": "23098b621332feecc50f02c6ba39a14954a89f0faeaa51927cb45196ac02c3bf",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0010_request.json",
+      "bytes": 22721,
+      "sha256": "acb8800fb6e83621b5db3b6886cdbf6266d51b769629235fe960287db3fccb3c",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0010_responses.json",
+      "bytes": 157430,
+      "sha256": "723afaaca34b9bcb4ab9eed53468139a6423ded4be317444d74e6444bab7a336",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0011_request.json",
+      "bytes": 20878,
+      "sha256": "171db18dd2090549af53e53ae76ea9fbce0c40777bab116240a70b54444f745f",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0011_responses.json",
+      "bytes": 103671,
+      "sha256": "2eb2c5c8afce6730f9118a8222627718e37e1ee39ea940ba5df02402232dc618",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0012_request.json",
+      "bytes": 21810,
+      "sha256": "b3262cebf9d2a2573a20ac255a5b29bd16dd6f059963394e6118b9a6332ab627",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0012_responses.json",
+      "bytes": 129421,
+      "sha256": "18ebb63356a5177a39097d7d86a00d1933806b961fef2f55e97ec2e079ce9094",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0013_request.json",
+      "bytes": 22712,
+      "sha256": "95e14871e3003d6e030276572eea004bd293bb5b6c6791c0f87ee6d9f1c4efc6",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0013_responses.json",
+      "bytes": 148546,
+      "sha256": "8524689ad640060585352325940d3f73d1e3979c1cc15acfa2796d5ed08594fd",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0014_request.json",
+      "bytes": 20475,
+      "sha256": "c78d00a3ff8def2a04d92a15a75beeed5a4b29bc8f0d93e67b6f051a7b36888f",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0014_responses.json",
+      "bytes": 146717,
+      "sha256": "a589028204e55f12a2273a5d2e7269dcd27616cbf01ec08b68d9396f6f6f70f5",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0015_request.json",
+      "bytes": 20207,
+      "sha256": "537bf24c3b3a053306555fde988af1cf64ef02fe5a84cd86cd828b0b26fe91e4",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0015_responses.json",
+      "bytes": 147468,
+      "sha256": "3b506b0917f833faed6515f4c7888c159d7e5b07fc6cabe76639caf1e1122836",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0016_request.json",
+      "bytes": 21045,
+      "sha256": "417bcf78b6791dea7b6fddeda7f048bcceee2b03d3c5e9e0f3388403f029fb38",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0016_responses.json",
+      "bytes": 150152,
+      "sha256": "bcaf2f4b676e87e02e913096821151794142af9bd1ba12d76742fe341456eff1",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0017_request.json",
+      "bytes": 21262,
+      "sha256": "56a2e254f25c83208a9afc01f7d1ca4fb21fda27173900e1f3b3cbc78878060e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0017_responses.json",
+      "bytes": 163492,
+      "sha256": "86c8c1a1a87c837309e490bc58346ce4967f1ba546890b04a300d0a0730f4add",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0018_request.json",
+      "bytes": 20604,
+      "sha256": "c8672b123a86212644f867688c4fdc41452f1204d5b7d3ce8ffa697a7ba52042",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0018_responses.json",
+      "bytes": 178701,
+      "sha256": "9fc7ec49ec1d775730ae1b7587378bb0315455dab5e8ebc4f88ec3c7c0a150a4",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0019_request.json",
+      "bytes": 22782,
+      "sha256": "53acf61c4450f8cef4d2e3ea3f00a21f736be7d45013d41932bc0407febf25bc",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0019_responses.json",
+      "bytes": 166741,
+      "sha256": "83e377e2b4fd260a01e5b4b12c37b254cdb6b8044c3b5e651deeb102b37ed5c7",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0020_request.json",
+      "bytes": 20460,
+      "sha256": "b440bd6611ecc222bddc750f9976f70fb313828c07a0305085647bac0c612ed0",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0020_responses.json",
+      "bytes": 191097,
+      "sha256": "cb7fcf083214481e49f5eca86db235d8fc4fdc78c30876b7d0e2ba1fb96b0686",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0021_request.json",
+      "bytes": 25178,
+      "sha256": "1af5a7161708c57c49c7e8201b321eb2d2336625dc6f5c12a001cd1082a60c9d",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0021_responses.json",
+      "bytes": 187128,
+      "sha256": "cd05501559018900ff022e31fd9c0a359c99757cf257b35dd1838ccaf1131965",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0022_request.json",
+      "bytes": 21558,
+      "sha256": "6dd1918d4f6a0da0392adf4118b794494062c269cba08180b4d459cbab4cbfa6",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0022_responses.json",
+      "bytes": 147076,
+      "sha256": "d7548bd06b8e688f3d07ed0f818de63058e1d013bb8684cf261c5abaa83950d3",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0023_request.json",
+      "bytes": 24004,
+      "sha256": "bc3d3ac47934130940c898d58facbf3d34daa877de2465896f921b0ad663c0bc",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0023_responses.json",
+      "bytes": 185895,
+      "sha256": "a6e9e83407aaf79745b2a4d6b55298e543a7b26e9a0bfe80b082f78f0a5cb8ce",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0024_request.json",
+      "bytes": 24565,
+      "sha256": "06090a28c576041518a7af74dd54df8c02a3a64c8f0e894a76a7426f5b0fc0e0",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0024_responses.json",
+      "bytes": 184504,
+      "sha256": "e721162ce37be0479b48fc9d65c3dfe9407411ca96d91d3b9767b95afe46bb56",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0025_request.json",
+      "bytes": 22995,
+      "sha256": "a2f4b6c24241409a10505dea6fb57164dadefc3947bb37d055d18e135a261875",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0025_responses.json",
+      "bytes": 155692,
+      "sha256": "401d520289ba21d76b6d94ef299aa23a4e1df0f4c0312ef0634a1406f11484d8",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0026_request.json",
+      "bytes": 22727,
+      "sha256": "8b14a6ff225ab191d88d3141594b235ef25cd8a96976722ebbdb964e7b9ed564",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0026_responses.json",
+      "bytes": 135134,
+      "sha256": "ef696646a461cbafc787293a4e2cf9177e962c6971f15f8e6b9d34d76a4a7cc5",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0027_request.json",
+      "bytes": 20570,
+      "sha256": "c054b6236ad2a2a70566a0a0ba075353d03b1fc7a475925282a8fa6d63ff8985",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0027_responses.json",
+      "bytes": 144221,
+      "sha256": "87bedb43970d0deb997577a2e65ad6ae7b82d3e5b02f6397ec01bbc10d0b2cc0",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0028_request.json",
+      "bytes": 21128,
+      "sha256": "a075c1e1bff28135fe593c235faf45760fb7346875d2f212c400ce7f9b484e7b",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0028_responses.json",
+      "bytes": 136046,
+      "sha256": "73c50c5e4be4301a7beeb7da9d7bea2b4f05902ef2a7a0299b57499ae30d36b7",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0029_request.json",
+      "bytes": 21581,
+      "sha256": "414ac77bd60c24d22ec8497c41342916fa0c6e6bca881ee9ac1d200bdc1b8145",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0029_responses.json",
+      "bytes": 121997,
+      "sha256": "28de6947356f832c1a6d8846106d9218de55db2f099e915b00a72d5b4e223369",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0030_request.json",
+      "bytes": 21832,
+      "sha256": "5b40345e39cd94cb0bc426fe4fa9b41216495e8c89877322d6d698390707afe7",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0030_responses.json",
+      "bytes": 124318,
+      "sha256": "31b2ab1f59e6154c558031d00e1ee5d39db431afc377911fe7a990168284d96b",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0031_request.json",
+      "bytes": 20418,
+      "sha256": "aef41dc6a4ec796d0f0295d9607f999fc723194109d51a608a8e967648fdbfcf",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0031_responses.json",
+      "bytes": 138154,
+      "sha256": "73d0f5f925338b9f9705241104741a92160b9e38452f892bfd85db9f63f5d71b",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0032_request.json",
+      "bytes": 21267,
+      "sha256": "dc44825f571ed46e24686136860e54177ac2d6bd3fafe119b37d8e145d9efdc1",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0032_responses.json",
+      "bytes": 138375,
+      "sha256": "73f16b044048f8b3446ce6d2c1f0dc9282eb9a34653c0d1cb2d2093f3c7cb574",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0033_request.json",
+      "bytes": 20896,
+      "sha256": "5ee851485c46595e11108abc1ec52c56943621aaf3a3e7e3178be31fd9182497",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0033_responses.json",
+      "bytes": 143547,
+      "sha256": "e75e080e8ef633ada93d47eaf7a29ce69953ca6804de485e365e703b77f61449",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0034_request.json",
+      "bytes": 25655,
+      "sha256": "f97619c0ac0f0932b74aabc301168652d06f90c2332b27e1e3c0d0548f9b8e13",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0034_responses.json",
+      "bytes": 134407,
+      "sha256": "4e6138b9b85c14cea82ec43c5985f9caeb86dbc5233e4f0bfc1dba794d3f53c8",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0035_request.json",
+      "bytes": 20778,
+      "sha256": "16418b3fc6981c9359acc28c0996820f41ab9901251f705c05ca4e3bfd1930bb",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0035_responses.json",
+      "bytes": 126431,
+      "sha256": "2338e5fbbee40d3c082b9cb10cb688a7e397225d8cb89c9f61a4f6719c7d1d2d",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0036_request.json",
+      "bytes": 19778,
+      "sha256": "d369e72aa7143686a31f8404430df99059d7d884c3989257a583c535b660f0ec",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0036_responses.json",
+      "bytes": 158174,
+      "sha256": "772b5693f9ecc78133ec45b8d2a788f160342ba2d59c24cffc46bd2e9b33a2d6",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0037_request.json",
+      "bytes": 22788,
+      "sha256": "f271a818fb0eacfc25ea9de0a1d91a10ce1a1abeeabcc88092267ccccaa64f29",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0037_responses.json",
+      "bytes": 162078,
+      "sha256": "09eb846cb397a95c1ae84afe51a0cd30bf74730925b4848042909745b27a751e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0038_request.json",
+      "bytes": 23033,
+      "sha256": "52b0c4b8f41bd4f71c9b82760e987ca523cc2f1585e29093ea27adef9c89b099",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0038_responses.json",
+      "bytes": 243058,
+      "sha256": "a1b71d17dbb5b9dd30d55dc49539c93ade756b288a9313a2c218747945de6867",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0039_request.json",
+      "bytes": 21229,
+      "sha256": "8454d071106bac6e1ac352c69b54898ecf24db4ede61bfb3e6fdf3e88632f7ce",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0039_responses.json",
+      "bytes": 245584,
+      "sha256": "3aff34172623a31cfa63f636c69073a1fb15cc0b6b8342569375ca6d94a9e04a",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0040_request.json",
+      "bytes": 19843,
+      "sha256": "1b3cc82c8747db02363e7e5b6be23a3b8f269bec7b44ca2c0b73107b147e7efc",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0040_responses.json",
+      "bytes": 230513,
+      "sha256": "e0f3f4ba66b25716dd308951f463343b98340508da88a29347e988a1edce5be7",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0041_request.json",
+      "bytes": 22054,
+      "sha256": "679fdf8c1da74c92e935ec47607b2ed14acd1b7a949a46aa548df62ba530b3f0",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0041_responses.json",
+      "bytes": 261386,
+      "sha256": "9d49b6b691302bb5d5d0a6e46986ad121e77eedbaf1b7755ed6385bc4b0067b5",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0042_request.json",
+      "bytes": 22628,
+      "sha256": "cf64fb5c92bce0ab031c76c5a041ee3fb8f7f823af80c8b224de85befa26bd52",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0042_responses.json",
+      "bytes": 275067,
+      "sha256": "3c5221597f42c28a6efde32236ce66d930dd72f93f2a9dcb7361d20cc5e80b1a",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0043_request.json",
+      "bytes": 20433,
+      "sha256": "ccfcf3d5ef8d1985e4e18d3401fe2e06dd1d2bf73946416bf00e0cdd4335b871",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0043_responses.json",
+      "bytes": 288656,
+      "sha256": "774bc0fd59120c25f81ec6d0d545bb35f498f8758fa431a36de84a4f9a5a2a15",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0044_request.json",
+      "bytes": 20678,
+      "sha256": "61eb6fb24428a79995e6054aaf66940739105265e3dcb271ddde88c2fbc1d319",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0044_responses.json",
+      "bytes": 262348,
+      "sha256": "d9fcb9c752b8da154ca833adad41c8016718508a3ae5a90f7cc59793ff71623f",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0045_request.json",
+      "bytes": 22137,
+      "sha256": "c580c9bfb686bb5fec0638f81451f7dbe2e5c578d9d3f2986ef7a176a4dc02df",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0045_responses.json",
+      "bytes": 274301,
+      "sha256": "be4b0f466154fc0140238e720cc7513f4b94b624094d231608eabca3664c7d47",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0046_request.json",
+      "bytes": 23070,
+      "sha256": "bffd191de8af119e463ee95bc0527f27cdb2973e783903fd153bee8ddd1f9511",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0046_responses.json",
+      "bytes": 217366,
+      "sha256": "6eed8d6561a99fc4e5bf570129de8f72beb9d40ae386dc67fc69f90710914f8e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0047_request.json",
+      "bytes": 21510,
+      "sha256": "9f3b4246f2c5a7b3f212b30512d7d307458ea4d4819476352061d9360bae0100",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0047_responses.json",
+      "bytes": 227103,
+      "sha256": "eead92f8a4c1081884d5dfcabdc597cd621e93fbed75b9cdef76f29d8949d624",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0048_request.json",
+      "bytes": 23045,
+      "sha256": "bd5818c5c780795e275e06e60de7397a62c92ba78bf056cd09073b4879989f36",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0048_responses.json",
+      "bytes": 253347,
+      "sha256": "7f09ac4c2cc78b1c70c44192d4d60686a872d476469bfe3b38e9ffbbe747d96b",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0049_request.json",
+      "bytes": 23824,
+      "sha256": "0300d2692e98109d628883b987535512ee343dbbaeed9faddc289e4783f8890c",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0049_responses.json",
+      "bytes": 264157,
+      "sha256": "1c236e451cf5b39a4992617a501cab537feeb3b6dcfae6d09bafe8c5a4739008",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0050_request.json",
+      "bytes": 20399,
+      "sha256": "5a38f8c66a2c439cdd9df50de7c5492821f8ce5bae3fd5479d6d49b0ccb23aa4",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0050_responses.json",
+      "bytes": 283760,
+      "sha256": "5511d0797082e3499d4ac8cc3b345ccb1472849c9364ca6976878d02cac3716a",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0051_request.json",
+      "bytes": 22529,
+      "sha256": "9b7094ffe22db5a5bb59f5d75e99fdd06637c5094b152eda51bfb90cf242c286",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0051_responses.json",
+      "bytes": 276640,
+      "sha256": "118b279d3844d6fecc848a040aaa14855331bae41e1a75481fdba23d3e49bfac",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0052_request.json",
+      "bytes": 21098,
+      "sha256": "28c11045126f966c78e703199455268f1224526da58d783f65f05a348c70c6da",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0052_responses.json",
+      "bytes": 252148,
+      "sha256": "b108b49405fe2ea20f2d5024ace3c967e3be1015e1cfac0242a8cea9bf8235fa",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0053_request.json",
+      "bytes": 20801,
+      "sha256": "918b2a09cf5a6c595c2a20b52a5aef7e9cc15c5859e959e8984e26ccb58b58ac",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0053_responses.json",
+      "bytes": 236712,
+      "sha256": "5c7fe005f796cca4b66cf837c7ca1cc285e6ff36c1f86afe949760029447c5ae",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0054_request.json",
+      "bytes": 24869,
+      "sha256": "e0e1d529d2a18de6a525ec4113d43de77580a0d2ff83b4b4df0d18a05826af1f",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0054_responses.json",
+      "bytes": 233488,
+      "sha256": "0d530484ba6ae4ba355b601f0d4ecbffb974bf8715aac3520e1915beb8959314",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0055_request.json",
+      "bytes": 20438,
+      "sha256": "105147075f1557ea3959418931af47d193dc34a741c3b27117a8b8eeb0fe0544",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0055_responses.json",
+      "bytes": 205615,
+      "sha256": "bcd9f2b65d29ebe6c2d1126aafa5ac9b8a31d5204fd14024d009f371b116beec",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0056_request.json",
+      "bytes": 21506,
+      "sha256": "49f1f91395e3240721431ed2dbcbbeb6a528f80abd1d763e3f183eaceffb539c",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0056_responses.json",
+      "bytes": 232290,
+      "sha256": "0a4c61f9be40efa054ad602b300b475826aee195bf46781b74f558e84f6b3ca0",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0057_request.json",
+      "bytes": 22404,
+      "sha256": "a7310037c98d54a9b2e04ba749802fa4e860cf98c89761f5cc0967b6b07c34e4",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0057_responses.json",
+      "bytes": 237945,
+      "sha256": "d71b05bc74fcba368d7c3cbad693048e75a02c5974b68045d41b3c29b1125b92",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0058_request.json",
+      "bytes": 21664,
+      "sha256": "834303f460b5ee605edb8bc2764d65406466d7def8ec56bce7e1f6e41db6e845",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0058_responses.json",
+      "bytes": 241743,
+      "sha256": "aecdd603b32e4bcf508e83a176f6643526c881b60c5d51c05e679f2994f34dec",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0059_request.json",
+      "bytes": 21799,
+      "sha256": "ab69a3cd9f8a2fd2f6c6db24d6c12f5320360be57bdadcb53fa8b1338e082ce1",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0059_responses.json",
+      "bytes": 253075,
+      "sha256": "5c5d91de82ca34f18886e6a2ae6ae0892da8337834f5b2bd3099546bd49acc9c",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0060_request.json",
+      "bytes": 20864,
+      "sha256": "8dd1e6a1c78267a120d5a7cb7c76a37c6b0abd1799bfca02d530146800c2a122",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0060_responses.json",
+      "bytes": 240696,
+      "sha256": "9531b412ac82aac218b78c82c5fe3737cb5e341513e4203c8aeca1808fe2d0bb",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0061_request.json",
+      "bytes": 21441,
+      "sha256": "6e275d14ffd3952d860f9a0d25157e2d4315d10b682356859abaffd1257035bf",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0061_responses.json",
+      "bytes": 218562,
+      "sha256": "3904e05f3d88bfdf3b7c13e6a30afad87e0a5e1c8c5108366962226e87d88cfb",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0062_request.json",
+      "bytes": 21246,
+      "sha256": "bce7d1c1e189e59bbd86912899b22e6397ec63c4573108165114f94703a9f5a0",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0062_responses.json",
+      "bytes": 224893,
+      "sha256": "2520530ee73c7a2946ef1a7b0c25399dc0a90752cf700ebb20d90e662c4d90a1",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0063_request.json",
+      "bytes": 21214,
+      "sha256": "e4f58fbae320e6367e778998dba34bd70e33b10833ac79f6a4ed1d4f35229802",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0063_responses.json",
+      "bytes": 261158,
+      "sha256": "1875cfa7eea7af5ea257a8fcc2ccb2ee5e73c70a30fb8cf21fe8b16df5a539f8",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0064_request.json",
+      "bytes": 21417,
+      "sha256": "699441e445ed3ed88282fe7ec9a0a27c66803d6e04bd9fcce86a27a719ee9f7b",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0064_responses.json",
+      "bytes": 232443,
+      "sha256": "b1aa976d3694d8b0247675c03cc46e3ab09897d0ea3fef998bd026829f568903",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0065_request.json",
+      "bytes": 24023,
+      "sha256": "f02947a3015dae79896e84160b62a97d30b444c6a2713de18dc05bcf5001c98f",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0065_responses.json",
+      "bytes": 214407,
+      "sha256": "10a75bd3071cd478000b9331dd160cacf938ec7ff3359bf899c91a3e0a5df179",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0066_request.json",
+      "bytes": 22402,
+      "sha256": "106765665a844551376957829b1cd2d6d0e285ce281bf01dab6888927fe97825",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0066_responses.json",
+      "bytes": 189276,
+      "sha256": "ba40a1ac90b35e94d9faa9540710b50c9a9127333931ec9bae025eb8e25d5e64",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0067_request.json",
+      "bytes": 20529,
+      "sha256": "aff580842620f09673948e6dc9a82acd847b44cdb7ac0144c10eaf2b900a7795",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0067_responses.json",
+      "bytes": 234912,
+      "sha256": "a124f0413dc49de8c3d4f0c935038dc9a714335a15914fdc98ae4d6a59087c60",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0068_request.json",
+      "bytes": 21646,
+      "sha256": "0e56605596a298fc60ddaabc3a1033aefe21e35f2644722d1ee31a80d1dd0c2f",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0068_responses.json",
+      "bytes": 202329,
+      "sha256": "7c96ee4eea27d1c78b1db857a35c39a2a0325518037c6feaba13e48986be0b67",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0069_request.json",
+      "bytes": 23042,
+      "sha256": "7cefac66645e112d49477e79bccf92bf096fa8f782be4f6d10170cad54bd5faa",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0069_responses.json",
+      "bytes": 225551,
+      "sha256": "728b1756e114dcdec557019623a815e56789263b521571ca89d82dba3b6c9141",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0070_request.json",
+      "bytes": 21715,
+      "sha256": "77be7b169839f13a5efdc1d869ca0481fde9a99eb3d4f668b888fa21ddeefbac",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0070_responses.json",
+      "bytes": 241350,
+      "sha256": "8c692aed0dbd4f14ffbad9d3884273929e8a54be1069cd7d168b883901d4c2c9",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0071_request.json",
+      "bytes": 23949,
+      "sha256": "6f3fb7bf024000dc0f37a5e40f3b9d7fe4b3150d93e615717721e5db84c870ab",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0071_responses.json",
+      "bytes": 222403,
+      "sha256": "e89bdc20903ce2a806f536e402fccfc05774a86e1ad53a976e563221c8d57ea1",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0072_request.json",
+      "bytes": 20818,
+      "sha256": "4eeb4029c30430366a622961b540d7d4fbfae7e2c131a8f5c25e4a921a36eab1",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0072_responses.json",
+      "bytes": 254493,
+      "sha256": "b6ba1a8963a1831664ef158a95bb800c5033b28488e3b51335aaae7f40ec5f11",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0073_request.json",
+      "bytes": 23223,
+      "sha256": "9d8d9fee68a2c8ef90bb9f137f6152eefad90eaf0c5040fc7cfbbeca5739c2d8",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0073_responses.json",
+      "bytes": 238141,
+      "sha256": "671946ac141584314c8eed5369e60a31caeb61f8b4000f5760ca8436dbd9aff5",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0074_request.json",
+      "bytes": 20368,
+      "sha256": "e9d400f187f7c7651a479530c77f27bf4b4add8ef91aacf600b624eda1f16440",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0074_responses.json",
+      "bytes": 261316,
+      "sha256": "3a393f7ac1f9a0c64ed7ab0e3abf9add8d80d422cb7c3b71b7165c413a7f8740",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0075_request.json",
+      "bytes": 22936,
+      "sha256": "c2ff1d65c43dd0e4a3f0f2185e6d950c2494dbf5d7d7c169dc20abde3578c125",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0075_responses.json",
+      "bytes": 203426,
+      "sha256": "3fe39c1fe9653ad52d948f83cbf99273089ccc7bb3f19be29e1032204b491ab9",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0076_request.json",
+      "bytes": 21532,
+      "sha256": "39bbb70228e9a45267b69d6ee0ff21b3c833dd50401a04c1de3d9e9156e06576",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0076_responses.json",
+      "bytes": 221406,
+      "sha256": "90c4eb110895407afcf7dd625f5c1ddf72d8d5598462233d801d40dc05fbb87d",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0077_request.json",
+      "bytes": 22345,
+      "sha256": "32220bea32b4fefe76992d76f76865cf649e7a1dc67c46a6b7d3a0c39b6f8f5e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0077_responses.json",
+      "bytes": 216786,
+      "sha256": "3f3f0857e5ef9b691095811c2367d9f0edc604661aea2b5da48b89b161d3b91d",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0078_request.json",
+      "bytes": 21150,
+      "sha256": "f93b0b7432240d18de4119b85f05af05867e1ea102ef22778d8ab1cc63eda495",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0078_responses.json",
+      "bytes": 183576,
+      "sha256": "cece3a41d2a7d9d37a9a8c5e084a4a2bd71a192bd0538e63e1c1db9030c197ae",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0079_request.json",
+      "bytes": 20130,
+      "sha256": "4d45a5d0b52bf1c40cbaf60ffcba5bdc180f6d0a5afcbade681a60dfc65d49b2",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0079_responses.json",
+      "bytes": 217839,
+      "sha256": "9c59674a0461fe5551d610950192e7458c46ae3153ea73bafdad8ff94de15b83",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0080_request.json",
+      "bytes": 22323,
+      "sha256": "9fac83d696a18cda797ffba5e6de66cec5d99cb2469c726ceee8eff8c9db4ee2",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0080_responses.json",
+      "bytes": 190554,
+      "sha256": "ff140757ab7a1ecb3c1ca9f0427c0d66c6783a767c18540165f31bb9f00d00d1",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0081_request.json",
+      "bytes": 22095,
+      "sha256": "e86588f969d0c79aa0cd88c05d8e64443e482d949a8eb0a7b63d60249831a8c2",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0081_responses.json",
+      "bytes": 233597,
+      "sha256": "63fbfd586b749c606f7fa9e95d409ebd25f8f01eeb477cc84a05d5cf52cf5a90",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0082_request.json",
+      "bytes": 22855,
+      "sha256": "9a19f6bc59cbb2a68e1993048182e5bb0dc6301491fca12f01e0071cbf2d06da",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0082_responses.json",
+      "bytes": 228593,
+      "sha256": "8a17c885ffa6ea47d6946378372125ec3e896adcd8cd1f68106c3840cfbf7a2d",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0083_request.json",
+      "bytes": 19798,
+      "sha256": "cfc302eef83b97d592e3b17a98412f0cb7935b0d0c9ac39e8d4f2b08a89a190f",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0083_responses.json",
+      "bytes": 257226,
+      "sha256": "4346ec7f0d4508e23869bee203de1fff0163806f6ae73dc93f33aeae01fe0ddc",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0084_request.json",
+      "bytes": 19981,
+      "sha256": "5bbe76a6cad1fdbb0d505d6d609c54f1460cf2ae4bb7a19bd59cd7ca403e0757",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0084_responses.json",
+      "bytes": 242793,
+      "sha256": "2c4bff49f098b28237c4c4c0fb95ae5cb6205e4e005c6b5900a1cf16273af327",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0085_request.json",
+      "bytes": 21855,
+      "sha256": "1321b13240e1ec24a8a703b7f168acedfe16ec7d80b26dbebc81cbdd46fd076b",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0085_responses.json",
+      "bytes": 238775,
+      "sha256": "09101b9a1803adc816c3a0bda1bc9f6f0c1d797d0a1e6e1ad8e76c4815f4f9e8",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0086_request.json",
+      "bytes": 23512,
+      "sha256": "0df1ed9824e51072dad14ef89ccd831ab81627466a10583c6caf83ff70dfde55",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0086_responses.json",
+      "bytes": 287766,
+      "sha256": "40cd78ee652620c56d394ac7dc76b24b73cd9ca5b47acbb880306cd00d96ade0",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0087_request.json",
+      "bytes": 23612,
+      "sha256": "cf3b0e82ea7485815b9d76d767451619b6935c045850511da0adf172930d4fed",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0087_responses.json",
+      "bytes": 252195,
+      "sha256": "28d55fb970dfd3300a09224207b7bfbf537d0140606f6887bfafa16fb8fce21d",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0088_request.json",
+      "bytes": 20058,
+      "sha256": "69b1b057750e74ffa14322ad56eec9166270a9e7dc746052d9b56197e250cca6",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0088_responses.json",
+      "bytes": 262789,
+      "sha256": "72d43fc985e416cf4eaa5c24f70474102a0a2ffa72403ae039c7497cac440f11",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0089_request.json",
+      "bytes": 21668,
+      "sha256": "30787e884ac1cfde67b66d357d3a1d4d66a61655056997e37f86d8cbbe62c635",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0089_responses.json",
+      "bytes": 273473,
+      "sha256": "c4c2eac956c1824696b553d4f33e8a3c6134fe71bc0b6d58cc383a8cfe416493",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0090_request.json",
+      "bytes": 21821,
+      "sha256": "3fdb4240fe1b31f0be510d647b656cae4c1464e0fcdfc32aa6661adb7b94ac1e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0090_responses.json",
+      "bytes": 307534,
+      "sha256": "fd30ed1310b550676890c8bb3b7f2c5e63eacb0202a415fcf18845a5c3630278",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0091_request.json",
+      "bytes": 20804,
+      "sha256": "b72d08c83aaa7dcb3848d2e7133d90060c2037e12744b957f6da9c132fc81899",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0091_responses.json",
+      "bytes": 298801,
+      "sha256": "12bbc1fc0dfe5845f1b8aa549b7be7e957bfa9f099de4fdc4245dade35bc9228",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0092_request.json",
+      "bytes": 19542,
+      "sha256": "9d75efabdc53cdb7af53187a23a4b5a0a6162693abc945f12f8e15e428caac81",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0092_responses.json",
+      "bytes": 306686,
+      "sha256": "1f873243981ec71a870412f52af8468b5e2d0394db42dfc38f0f8adbefd58ea4",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0093_request.json",
+      "bytes": 22844,
+      "sha256": "c01d9947631edd85c381da0ee1c6ec351fca34e1e4038a59ed44dcc9415342e3",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0093_responses.json",
+      "bytes": 376805,
+      "sha256": "55c2f271371a856bbbec07a6691a12dfa39f492770e28b8dec97f3a6541e1eb0",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0094_request.json",
+      "bytes": 23962,
+      "sha256": "d2cf039d27b1431e6f4dd150184b55fc7a96e94b4b02e21fc01965fb26640596",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0094_responses.json",
+      "bytes": 331009,
+      "sha256": "1edea0b8c653de5cc954f8e0199fb15162deed3b34894004e39a55a81e50d70c",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0095_request.json",
+      "bytes": 22851,
+      "sha256": "44e533690a6760257016c5df29d33e2a2cfce4dee78069fecac6130336a5dae7",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0095_responses.json",
+      "bytes": 348675,
+      "sha256": "fa0c06de6fb482fd416f0663756f5138107458c9d3a74edb5844597177a68393",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0096_request.json",
+      "bytes": 24871,
+      "sha256": "2a1a8c1dbc7c3ba9bbef266a1830cc0280fbbdfd188cc1282539add3148065ae",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0096_responses.json",
+      "bytes": 332950,
+      "sha256": "a2a648614403c52963cfc62867ce611ac0bad8eff0df5871110d7bf5a4437161",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0097_request.json",
+      "bytes": 24104,
+      "sha256": "469128792300be340959c4a91939ef4abaccba8ee0c2630ff5c1468097f11572",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0097_responses.json",
+      "bytes": 368893,
+      "sha256": "0f43d663cc0baa81113eb61718dc044efb8b90e47fc7fbf54257b6fa411c5c59",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0098_request.json",
+      "bytes": 20798,
+      "sha256": "327f8e9ef639b5b1c3fb59561851c573ee3b7d37e3d962e78230a253a28439a0",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0098_responses.json",
+      "bytes": 304806,
+      "sha256": "808cef591a9d559b8ac164638f9002e3011390f6283d2169c5f0004b0eb98546",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0099_request.json",
+      "bytes": 22134,
+      "sha256": "93a3cfedfeae8b04eaf90878e04f270d18ba2b7b019d16e01e42ed17741f1965",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0099_responses.json",
+      "bytes": 341189,
+      "sha256": "8e15367b0a90c045471d1a1c3b062a195d12d0a24cfc09e77246da645a9f0b54",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0100_request.json",
+      "bytes": 22303,
+      "sha256": "0983c058977ac74bdfd65514438e0c9bdbd5543f8cb23b9fb17e50ea41d1387e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0100_responses.json",
+      "bytes": 390353,
+      "sha256": "2f494ae3cb2f78e3c3d04cb3a1fc4f73b56ff49af1a50a986f214b348eb41444",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0101_request.json",
+      "bytes": 23303,
+      "sha256": "5c051b618f6c6cbab3b3d692ade9e3e54b1a2d3d05d105021b5aa9082b12b407",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0101_responses.json",
+      "bytes": 358205,
+      "sha256": "1a1868b175255b47af775e63bae46beb072e88d109763cd183e490100de4a061",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0102_request.json",
+      "bytes": 20583,
+      "sha256": "44f704f92cb701e0fe33d24aae5ae985b73f22408e780c0490152a2561a0257e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0102_responses.json",
+      "bytes": 372357,
+      "sha256": "63dfd6b00f325c60aaab43e10d10ad193fd2333981576218e1de658c3c6e7397",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0103_request.json",
+      "bytes": 21791,
+      "sha256": "60d474a77ef1b89cfffcddd122c4583b48b1f72a547a68dbe13a8cb28f3fac30",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0103_responses.json",
+      "bytes": 352650,
+      "sha256": "551758ee26708efa4b200bfde3c8e1499fcf59825a4b79df8ad4d0da891ec555",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0104_request.json",
+      "bytes": 23176,
+      "sha256": "77a1e9e322510e73e79ab0a40d225d5785d6a07562d445e16a7e4304aedf8c0a",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0104_responses.json",
+      "bytes": 328788,
+      "sha256": "f1718ef5a5f0ee35bd2e86a684109442c541046e67f4966259679855e36abcb0",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0105_request.json",
+      "bytes": 23902,
+      "sha256": "8f0c20d26b6f8c9825c27f706fa79fa8c8b4e93601857c3c4f03528370ab1093",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0105_responses.json",
+      "bytes": 394137,
+      "sha256": "78684ae21ec3d0e0712bb3f6a39ab4779fd1f0c3419d0eb6e1c35114621a46bd",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0106_request.json",
+      "bytes": 22486,
+      "sha256": "b9d30f4127c718cc2079cbde9fdc740587fec1d9829457e80766eabdcc19fc4a",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0106_responses.json",
+      "bytes": 326087,
+      "sha256": "9a5d163170ef2f474c52d79cc811ca1e4ead0d9a376979d045836b9a297c4685",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0107_request.json",
+      "bytes": 21607,
+      "sha256": "8179367d957ed8df22a2cdf4d54f55e726ce5d7c351dec5919b58409ee0853b9",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0107_responses.json",
+      "bytes": 313900,
+      "sha256": "9d1f0215c96e84ad8ebcc287034978e4ad7c577ad320a964b1f67a9399d611d1",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0108_request.json",
+      "bytes": 22293,
+      "sha256": "09ce0f9bc5c5bee4999b1000f76c1a463eb662bf4a67603840a4fb830fd02a18",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0108_responses.json",
+      "bytes": 378076,
+      "sha256": "91aa0848257c242a29bdad2104d0f9396c1f57eaafca78d72475d84d358556b7",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/rollouts/step_0109_request.json",
+      "bytes": 21148,
+      "sha256": "45ea2e74d3cace0c032893230cd96580fbf8469be28df5f1f2994d2984de061e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/train.log",
+      "bytes": 1699354,
+      "sha256": "7fc5cf29549a7dfba959eef078962fdb271db752f078738113b7f8a55f92bacd",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/train.log~",
+      "bytes": 575,
+      "sha256": "cd7a8a4b16c2e5f6cc41780a51b43a05d8e17395b6b36fb388f5bef3f43465c8",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_single_gpu/train_config.json",
+      "bytes": 757,
+      "sha256": "cd3563c410ca26f5929cfd76cb258dc0416b1e1d3a000dbf125f9cd732fdec2b",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_eval_step_0105/base.jsonl",
+      "bytes": 1251061,
+      "sha256": "a768e0a924f35925f458cec6d43f254a8eda21e595ec4667d5e62a0578eb70ae",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_eval_step_0105/cases.json",
+      "bytes": 293342,
+      "sha256": "d4a918bc0f3f7915c564fc7c815ba69ebf6fb4712506728fddf3bf7e51a5bc6e",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_eval_step_0105/comparison.json",
+      "bytes": 471,
+      "sha256": "1508c565dd5f2f00985809f10f5fd44a750f8b50cdaebff06f6d5eb4665645bf",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_eval_step_0105/format_free_audit.json",
+      "bytes": 791,
+      "sha256": "e5ac102db625ac4e65dabc863837fd448000d675fc5b2e9c439220715fde2c2d",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_eval_step_0105/format_free_manual_review.jsonl",
+      "bytes": 211727,
+      "sha256": "25e6074f531d98757c48621ac994d3db7aa3af3134e5aa756ffc45a5f6b0d5cb",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    },
+    {
+      "archive": "a5_code_results_backup.tar.gz",
+      "path": "experiments/grpo_eval_step_0105/grpo.jsonl",
+      "bytes": 1767047,
+      "sha256": "82d77c62e79d2d18a08e164aef544e5419c26f869fb7a0cb37cade76ee4362c6",
+      "category": "C",
+      "reason": "Historical evidence inventoried; selected metrics/configurations/results are curated separately."
+    }
+  ]
+}

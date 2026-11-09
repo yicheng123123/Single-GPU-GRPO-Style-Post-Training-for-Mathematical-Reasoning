@@ -1,0 +1,93 @@
+{
+  "baseline_commit": "5e5cc843a83a1dd1e1344d270cf9ab330172774c",
+  "cpu_pytest": {
+    "passed": 49,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "command": "python -m pytest -q --basetemp=.local/pytest-sft-showcase-001 -p no:cacheprovider",
+    "observed_seconds": 13.83
+  },
+  "syntax_files": [
+    "original_implementation/adapters.py",
+    "original_implementation/grpo/audit_grpo_answers.py",
+    "original_implementation/sft/eval_sft_math.py",
+    "original_implementation/sft/train_sft_a5_fp32.py",
+    "scripts/import_backups.py",
+    "scripts/project.py",
+    "scripts/release_check.py",
+    "src/grpo_posttraining/__init__.py",
+    "src/grpo_posttraining/analysis.py",
+    "src/grpo_posttraining/answer_text.py",
+    "src/grpo_posttraining/artifacts.py",
+    "src/grpo_posttraining/cli.py",
+    "src/grpo_posttraining/core.py",
+    "src/grpo_posttraining/evaluation.py",
+    "src/grpo_posttraining/grader.py",
+    "src/grpo_posttraining/sft.py",
+    "src/grpo_posttraining/sft_analysis.py",
+    "src/grpo_posttraining/trainer.py",
+    "tests/conftest.py",
+    "tests/test_core.py",
+    "tests/test_evidence_and_safety.py",
+    "tests/test_sft.py"
+  ],
+  "syntax_status": "PASS; existing third-party grader emits invalid-escape SyntaxWarnings, kept unchanged",
+  "protected_source_sha256": {
+    "src/grpo_posttraining/core.py": "97b644fdb53ad7680488fb199a87b2d6dea9426f72ed2a19d6932b324c42b56a",
+    "src/grpo_posttraining/trainer.py": "97136a329f35961d431895dbf618c557aaac8ff47b2f45579944171b689706dd",
+    "src/grpo_posttraining/evaluation.py": "148c105db5d34a9042c98f5f7651b6803d64b2a0a595bed8190c2e5c514be32a",
+    "src/grpo_posttraining/analysis.py": "7cd9d0b28307fb36b0c1de9f5182a6bd3050acecfdbf308abd25c57dde79ee2d"
+  },
+  "historical_grpo_metrics_and_records_unchanged": true,
+  "recomputed_grpo_summary_identical": true,
+  "regenerated_grpo_png_bytes_identical": true,
+  "original_archives_verified": [
+    {
+      "name": "a5_experiment_records_20261106.tar.gz",
+      "bytes": 5733959,
+      "sha256": "4a7e9eaca8ffcf2d9f5cdf78ad0754d5540b214c42bb8987d102ec7e27c35023"
+    },
+    {
+      "name": "a5_code_results_backup.tar.gz",
+      "bytes": 11659559,
+      "sha256": "52f4fd7b70f4b481bd12fc3b93c653b8552f48be3bdb9555ca0b123f2e8c13f1"
+    },
+    {
+      "name": "a5_step0105_model.tar",
+      "bytes": 6186332160,
+      "sha256": "05e6fa8d44743c3adc94b1db85294800acbf9071aac3fc823db53df35d695704"
+    }
+  ],
+  "original_python_files_byte_identical": 4,
+  "history_and_index_blob_scan": {
+    "blob_count": 122,
+    "largest_blob_bytes": 1767047,
+    "over_100MiB": [],
+    "secret_pattern_hits": [],
+    "scope": "main-reachable history and index; token/key regex patterns, not a proof of absence of every possible secret"
+  },
+  "gpu_tasks_executed": false,
+  "dependencies_installed": false,
+  "cli_checks": {
+    "check-config": "PASS",
+    "sft-train --help": "PASS",
+    "train --help": "PASS",
+    "evaluate --help": "PASS",
+    "sft/train/evaluate_without_execute_flags": "All refused before model load; nonzero exit"
+  },
+  "reproduction_boundary": "CPU validation of maintained SFT refactor; historical GPU results are from archived scripts",
+  "diff_whitespace_check": {
+    "maintained_code_and_docs": "PASS",
+    "preserved_exceptions": [
+      "original_implementation/adapters.py",
+      "original_implementation/sft/bf16_vs_fp32.diff",
+      "results/sft/figures/*.svg"
+    ],
+    "reason": "Original trailing whitespace preserves archive bytes; SVG whitespace is Matplotlib output."
+  },
+  "additional_index_checks": {
+    "literal_credential_assignment_hits": [],
+    "published_original_index_bytes_match_archive": true
+  }
+}

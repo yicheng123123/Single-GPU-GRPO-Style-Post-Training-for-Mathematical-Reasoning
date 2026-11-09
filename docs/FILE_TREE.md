@@ -1,6 +1,6 @@
 # Actual public file inventory
 
-Private .local originals, model metadata and recovery/preparation files are excluded from Git.
+Private `.local` originals, model metadata and preparation files are excluded.
 
 ```text
 .gitattributes
@@ -15,6 +15,7 @@ configs/evaluation.json
 configs/historical_train.sanitized.json
 configs/train_grpo.json
 docs/AUDIT_REPORT.md
+docs/FILE_TREE.md
 docs/GITHUB_PLAN.md
 docs/REPRODUCIBILITY_GAPS.md
 docs/RESUME_EVIDENCE.md
@@ -25,8 +26,19 @@ docs/evaluation_cn.md
 docs/limitations.md
 docs/provenance.md
 docs/reproducibility.md
+docs/sft.md
+docs/sft_experiments.md
+original_implementation/README.md
+original_implementation/adapters.py
+original_implementation/grpo/audit_grpo_answers.py
+original_implementation/sft/bf16_vs_fp32.diff
+original_implementation/sft/eval_sft_math.py
+original_implementation/sft/train_sft_a5_fp32.py
+provenance/archive_evidence_inventory.json
 provenance/core_function_map.json
 provenance/current_model_inventory.json
+provenance/original_selection.json
+provenance/sft_source_map.json
 provenance/source_archives.json
 provenance/source_lineage.json
 provenance/trainer_changes.diff
@@ -56,6 +68,8 @@ results/metrics/historical_comparison.json
 results/metrics/recomputed/REPORT.md
 results/metrics/recomputed/summary.json
 results/metrics/release_checks.json
+results/metrics/sft_showcase_release_checks.json
+results/metrics/sft_showcase_validation.json
 results/metrics/supplementary_audit.json
 results/metrics/train_metrics.jsonl
 results/metrics/validation.json
@@ -63,6 +77,23 @@ results/records/automatic_recovery_candidates.jsonl
 results/records/base.jsonl
 results/records/cases.json
 results/records/grpo.jsonl
+results/sft/bf16/checkpoint_metadata.json
+results/sft/bf16/run_config.sanitized.json
+results/sft/bf16/train_metrics.jsonl
+results/sft/evaluation/base.jsonl
+results/sft/evaluation/bf16.jsonl
+results/sft/evaluation/eval_indices.json
+results/sft/evaluation/fp32.jsonl
+results/sft/figures/figure_sources.json
+results/sft/figures/sft_training_nll.png
+results/sft/figures/sft_training_nll.svg
+results/sft/figures/sft_vs_base.png
+results/sft/figures/sft_vs_base.svg
+results/sft/fp32/checkpoint_metadata.json
+results/sft/fp32/run_config.sanitized.json
+results/sft/fp32/train_metrics.jsonl
+results/sft/recomputed/summary.json
+results/sft/training_data_statistics.json
 scripts/import_backups.py
 scripts/project.py
 scripts/release_check.py
@@ -76,9 +107,11 @@ src/grpo_posttraining/evaluation.py
 src/grpo_posttraining/grader.py
 src/grpo_posttraining/prompts/question_only.prompt
 src/grpo_posttraining/prompts/r1_zero.prompt
+src/grpo_posttraining/sft.py
+src/grpo_posttraining/sft_analysis.py
 src/grpo_posttraining/trainer.py
 tests/conftest.py
 tests/test_core.py
 tests/test_evidence_and_safety.py
-docs/FILE_TREE.md
+tests/test_sft.py
 ```

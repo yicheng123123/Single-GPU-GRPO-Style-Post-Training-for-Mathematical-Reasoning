@@ -1,6 +1,17 @@
 # Architecture and module map
 
 ```mermaid
+flowchart TD
+    B["Qwen2.5-Math Base"] --> S["SFT: teacher forcing / response NLL"]
+    B --> R["RL: vLLM rollout / group-relative policy gradient"]
+    S --> E["Evaluation and analysis: distinct historical protocols"]
+    R --> E
+```
+
+The two experimental branches initialize independently from Base; there is no
+SFT-to-RL checkpoint transition in the reported run. The following diagram details RL.
+
+```mermaid
 flowchart LR
     D["MATH Train: 7,496 eligible rows"] --> P["32 prompts × 8 responses"]
     W["BF16 rollout policy export"] --> V["Short-lived vLLM worker"]
@@ -21,6 +32,8 @@ The provided local Step 105 archive contains **model files only**, not a full re
 | Concern | Maintained code | Evidence / behavior |
 |---|---|---|
 | SFT and RL primitives | `src/grpo_posttraining/core.py` | 11 function bodies preserved; AST and segment-hash checks |
+| SFT training | `src/grpo_posttraining/sft.py` | Historical normalization/precision, four-microbatch updates, fresh local outputs |
+| SFT evidence | `src/grpo_posttraining/sft_analysis.py` | 64 metric rows, 150 paired evaluation rows, separate figures |
 | GPU orchestration | `src/grpo_posttraining/trainer.py` | Serialized worker/backward, FP32 master, BF16 export |
 | Scoring | `src/grpo_posttraining/grader.py` | Byte-identical archived third-party grader |
 | New evaluation | `src/grpo_posttraining/evaluation.py` | Fresh directories, hashes, shared tokenizer, raw IDs/finish metadata |

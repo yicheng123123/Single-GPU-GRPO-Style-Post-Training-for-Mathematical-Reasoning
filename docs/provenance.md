@@ -25,7 +25,23 @@ The archived trainer is adapted only for package imports/worker invocation, a gu
 project-local output scope, preserved checkpoints and recovery evidence. Algorithm/loss settings
 remain the archived baseline. The full diff is provenance/trainer_changes.diff; new GPU behavior is unvalidated.
 Unsafe legacy evaluation/cache reuse is isolated in ignored originals; the new evaluator never reuses result directories.
-Partly implemented optional course adapters are omitted from the public core, not claimed completed.
+Selected legacy evaluation scripts are now also exposed as archival evidence under
+`original_implementation/`, with warnings about their old layout/output behavior.
+Partly implemented optional course adapters are omitted from the maintained core;
+the byte-identical original adapters retain those stubs and do not claim them completed.
+
+The SFT training path is integrated as `sft.py`, preserving the response-summed objective,
+microbatch/accumulation settings, precision choices and model-only export. It adds input
+validation, local-only loading, fresh run paths and manifests. Exact original line mappings
+are in `provenance/sft_source_map.json`. It has CPU coverage, not a new GPU result.
+`provenance/original_selection.json` classifies every Python member from both archives
+and records the four byte-identical public originals. Duplicate BF16 training code is
+represented by a precision diff; intermediate broken/debug GRPO scripts remain private.
+
+SFT training metrics and 150 generated evaluation rows are byte-identical copies under
+`results/sft`. Config paths are sanitized and checkpoint metadata is summarized.
+Raw R1-derived training trajectories remain private because their upstream license/revision
+chain is not authenticated; token lengths, dataset hash and tag/EOS counts are published.
 
 ## Record transformations
 

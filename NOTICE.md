@@ -10,3 +10,8 @@ Qwen2.5-Math-1.5B, its tokenizer, PyTorch, Transformers, vLLM, ROCm and MATH dat
 are third-party contributions, not claimed as original project inventions.
 This project is not an official Stanford release and does not claim completion of all A5 tasks.
 See LICENSE_NOTES.md and docs/provenance.md before publication.
+
+Selected original adapters retain course interfaces, project-filled bodies and optional
+unfinished stubs. Original SFT/evaluation/audit scripts are archived project evidence;
+maintained SFT integration and CPU tests are subsequent packaging work.
+The R1-derived SFT substitute training records are not redistributed.
