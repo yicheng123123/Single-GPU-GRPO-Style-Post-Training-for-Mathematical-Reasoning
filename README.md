@@ -1,121 +1,140 @@
 # Single-GPU GRPO-Style Post-Training for Mathematical Reasoning
 
-[中文说明](README_CN.md) · [Algorithm](docs/algorithm.md) · [Evaluation](docs/evaluation.md) · [Reproduce](docs/reproducibility.md)
+**An end-to-end mathematical RL post-training pipeline for Qwen2.5-Math-1.5B on one AMD MI300X.**
 
-A Stanford CS336 Spring 2025 A5 extension studying mathematical post-training on
-Qwen2.5-Math-1.5B, using single-GPU PyTorch training and serialized vLLM rollouts.
-Reported hardware: one AMD MI300X; this local packaging run did not remeasure GPU behavior.
+Built with **PyTorch + vLLM**, integrating online rollouts, verifiable answer rewards,
+group-relative policy gradients, gradient accumulation, policy synchronization and checkpoint recovery.
+Developed as an extension of Stanford CS336 Spring 2025 Assignment 5.
 
-## Highlights
+[中文说明](README_CN.md) · [Core implementation](src/grpo_posttraining/core.py) · [Training loop](src/grpo_posttraining/trainer.py#L131) · [Evaluation](docs/evaluation.md)
 
-- Group-standardized, response-length-normalized **on-policy REINFORCE with baseline**.
-- FP32 training parameters, BF16 inference exports, gradient accumulation, and checkpoint/resume code.
-- Preserved response-level evidence, format-bias analysis, data-isolation checks, and CPU verification.
-- **CS336 A5 core implementation + selected experiments**. PPO/GRPO clipping was not enabled in this run.
+## Key Results
 
-## Key results
+Base and the **Step 105 policy** were evaluated on the same fixed **1024-question MATH Test subset**.
 
-| Metric on the same 1024 questions | Base | GRPO-style Step 105 |
+| Metric | Base | RL-trained · Step 105 |
 |---|---:|---:|
-| Strict R1-Zero reward (format gated) | 148/1024 (14.45%) | 743/1024 (72.56%) |
-| Format compliance | 39.94% | 90.82% |
-| Supplementary automatic extraction estimate — **not official accuracy** | 42.68% | 72.66% |
+| **Strict R1-Zero reward** | 14.45% | **72.56%** |
+| Output format compliance | 39.94% | **90.82%** |
+| Supplementary answer-extraction estimate | 42.68% | 72.66% |
 
-Strict reward difference: **+58.11 percentage points**. This includes format learning;
-it is **not a measured +58.11pp gain in pure mathematical reasoning**.
-The supplementary estimate difference is +29.98pp and remains a post-hoc diagnostic.
+Strict reward improved by **+58.11 percentage points**; it requires both answer correctness and the specified format, so the change includes format learning.
+The supplementary **+29.98pp** is an automated diagnostic estimate, not an independently validated mathematical benchmark accuracy.
 
-Training logs contain **109 optimizer updates**. The latest archived complete-checkpoint
-pointer and evaluated model label are **Step 105**. Through that step, the recorded run
-sampled **26,880 responses**.
+![Training rollout reward across the logged updates](results/figures/training_reward.svg)
 
-![Training reward](results/figures/training_reward.svg)
+The logs record **109 optimizer updates**, with the **Step 105 checkpoint** used for evaluation.
+Through Step 105, training sampled **26,880 responses**; the curve shows rollout-batch reward and a trailing average, rather than held-out accuracy.
 
-The curve is changing-batch rollout reward, not validation accuracy. Thin line: per-step;
-thick line: trailing mean of up to 10 steps; dashed line: evaluated checkpoint label.
+<img src="results/figures/strict_reward.svg" width="680" alt="Strict format-gated reward: Base 14.45%, Step 105 72.56%" />
 
-<img src="results/figures/strict_reward.svg" width="49%" alt="Strict format-gated reward" /> <img src="results/figures/format_compliance.svg" width="49%" alt="Format compliance" />
+## What I Built
 
-<img src="results/figures/supplementary_audit.svg" width="49%" alt="Automatic supplementary audit, not official accuracy" /> <img src="results/figures/error_transition.svg" width="49%" alt="Paired error transitions" />
+### 1. Online group-relative policy optimization
 
-All plots are generated from [preserved records](results/records/) and
-[training metrics](results/metrics/train_metrics.jsonl), with [source hashes](results/figures/figure_sources.json).
+Each iteration samples **32 MATH prompts × 8 responses**, producing a rollout batch of **256 responses**.
+A mathematical answer grader supplies terminal rewards; subtracting the group mean and dividing by the group standard deviation produces signed advantages.
+The loss uses only **response-token log probabilities**, normalized by each response's valid length.
 
-## System architecture
+The reported objective is **on-policy REINFORCE with a group baseline**; clipped GRPO/PPO was not enabled.
+See [advantage computation](src/grpo_posttraining/core.py#L47) and the [policy-gradient microbatch step](src/grpo_posttraining/core.py#L256).
+
+### 2. Single-GPU rollout and training orchestration
+
+A short-lived **vLLM worker** generates from a **BF16 policy export** on the same GPU as the PyTorch trainer.
+The controller waits for that worker to exit before running backward with **FP32 master parameters and BF16 autocast**.
+It accumulates gradients across **128 microbatches × 2 responses**, then performs **one AdamW update**.
+This separates generation and backward execution without dedicating a second GPU to inference.
+
+### 3. Policy synchronization, recovery and evaluation
+
+After an update, the trainer exports the new BF16 policy for the next rollout.
+Full checkpoints save the model, optimizer and CPU/GPU RNG state; the resume path restores that state and rebuilds the rollout policy.
+The evaluation tooling pairs Base/RL outputs by question, analyzes format bias, and provides a fresh-run entry that binds outputs to model and protocol hashes.
+
+## System Architecture
 
 ```mermaid
 flowchart LR
-    D["MATH Train: 7,496 eligible rows"] --> P["32 prompts × 8 responses"]
-    W["BF16 rollout policy export"] --> V["Short-lived vLLM worker"]
-    P --> V
-    V --> R["Strict reward + group advantage"]
-    V --> X["Worker exits before backward"]
-    R --> T["FP32 policy + BF16 autocast<br/>128 microbatches × 2 responses"]
-    X --> T
-    T --> U["One AdamW update per rollout batch"]
-    U --> W
-    U --> C["Full checkpoints: model + optimizer + RNG"]
-    C --> E["Separate fixed-subset evaluation"]
+    V["vLLM · BF16 policy<br/>32 prompts × 8 responses"] --> R["Verifiable reward<br/>Group advantage"]
+    R --> T["PyTorch · FP32 master<br/>128 microbatches → 1 AdamW update"]
+    T --> E["Export updated<br/>BF16 policy"]
+    E -->|Next rollout| V
 ```
 
-Execution is serialized; the training model/optimizer remain resident during rollout.
-The provided local Step 105 archive contains **model files only**, not a full resume checkpoint.
+Generation and backward run sequentially; the training model and optimizer can remain resident during rollout.
+[Architecture and module map](docs/architecture.md).
 
-## What is optimized?
+## Technical Implementation
 
-For prompt group g, use the group-relative advantage and masked response objective:
+| Component | Reported configuration |
+|---|---|
+| Initial policy | Qwen2.5-Math-1.5B Base |
+| Rollout batch | 32 prompts × group size 8 = 256 responses |
+| Training precision | FP32 master parameters + BF16 autocast |
+| Gradient accumulation | 128 microbatches × 2 responses |
+| Optimization | AdamW, LR `1e-5`, one update per rollout batch |
+| State recovery | Full model, optimizer and CPU/GPU RNG checkpoint |
 
-$$A_{g,i}=\frac{r_{g,i}-\bar r_g}{s_g+10^{-6}},\qquad
-L=-\frac1B\sum_i A_i\frac{\sum_t m_{i,t}\log\pi_\theta(y_{i,t}\mid x_i,y_{i,<t})}{\sum_t m_{i,t}}.$$
+| Code entry | File and function |
+|---|---|
+| Group advantage | [core.py · run_compute_group_normalized_rewards](src/grpo_posttraining/core.py#L47) |
+| Token log probabilities | [core.py · run_get_response_log_probs](src/grpo_posttraining/core.py#L91) |
+| Policy gradient / response mask | [core.py · run_grpo_microbatch_train_step](src/grpo_posttraining/core.py#L256) |
+| Training loop | [trainer.py · _training_main](src/grpo_posttraining/trainer.py#L131) |
+| vLLM rollout | [trainer.py · _rollout_worker](src/grpo_posttraining/trainer.py#L33) |
+| Policy export | [trainer.py · _save_policy_for_rollout](src/grpo_posttraining/trainer.py#L87) |
+| Checkpoint / restore | [trainer.py · _save_checkpoint](src/grpo_posttraining/trainer.py#L110), [resume branch](src/grpo_posttraining/trainer.py#L237) |
+| Independent evaluation | [evaluation.py · run](src/grpo_posttraining/evaluation.py#L34) |
 
-The run uses B=256, group size 8, 32 prompts, 128 microbatches of 2 responses,
-and one optimizer update per rollout batch. No clipped importance ratio or KL penalty
-is used. [Detailed Chinese derivation and source mapping](docs/algorithm.md).
+The core also includes [SFT tokenization/masking](src/grpo_posttraining/core.py#L14) and [SFT loss](src/grpo_posttraining/core.py#L242).
+The [Chinese algorithm guide](docs/algorithm.md) explains the objective, masking and accumulation with source references.
 
-## Quick start: CPU evidence reproduction
+## Evaluation and Case Studies
+
+Paired strict-reward transitions: **601 wrong → right**, **6 right → wrong**.
+The archived evaluator uses a shared prompt and decoding implementation for both models; the preserved rows allow direct question-level comparison.
+
+| Case | Question | Gold | Base | RL | Strict reward, Base → RL |
+|---|---|---:|---:|---:|---|
+| [193](results/records/grpo.jsonl#L40) | Rectangle: area 180, perimeter 54; find the diagonal squared | 369 | 361 | 369 | 0 → 1 |
+| [77](results/records/base.jsonl#L14) | Solve `(2x−1)/(2x+2) = (x−3)/(x−1)` | −7 | −7 | −7 | 0 → 1; Base failed the format gate |
+| [3155](results/records/grpo.jsonl#L622) | Sum the smallest and largest prime factors of 10101 | 40 | 40 | 26 | 1 → 0 |
+
+These compare final answers and original scores. [Five complete case studies](results/examples/CASES_CN.md) include numerical gains, correct-but-format-invalid Base answers and an RL failure.
+
+<details>
+<summary>Format compliance and supplementary answer-extraction audit</summary>
+
+<img src="results/figures/format_compliance.svg" width="49%" alt="Format compliance" /> <img src="results/figures/supplementary_audit.svg" width="49%" alt="Automatic extraction estimate, not official accuracy" />
+
+Sources: [preserved response records](results/records/), [recomputed summary](results/metrics/recomputed/summary.json) and [figure source hashes](results/figures/figure_sources.json).
+
+</details>
+
+[Evaluation protocol](docs/evaluation.md) · [中文格式偏差分析](docs/evaluation_cn.md) · [Paired-transition figure](results/figures/error_transition.svg)
+
+## Quick Start
+
+Regenerate reports and plots from the included experiment records:
 
 ```sh
 python scripts/project.py check-config
-python scripts/project.py doctor
-python scripts/project.py report --output .local/reports/recomputed-001
-python scripts/project.py figures --output .local/figures/recomputed-001
-python -m pytest -q --basetemp=.local/pytest-temp -p no:cacheprovider
+python scripts/project.py report --output .local/reports/readme-review-001
+python scripts/project.py figures --output .local/figures/readme-review-001
 ```
 
-Use Python 3.12. Reporting uses the standard library; plots need Matplotlib; core
-tests need an existing CPU PyTorch installation and pytest. Data isolation checks
-add PyArrow. See [dependencies and exact commands](docs/reproducibility.md).
-No command above loads a pretrained model or probes a GPU.
+Use Python 3.12; plotting requires Matplotlib. Choose a new output directory for each run.
+These commands analyze existing records. [Training, new GPU evaluation, full-state resume and CPU test commands](docs/reproducibility.md) are documented separately.
 
-## Evaluation and error analysis
+## Reproducibility and Scope
 
-The archived protocol uses one completion per question, the same R1-Zero prompt,
-and a shared decoding implementation. Historical defaults are greedy decoding and a
-1,024-token generation budget; actual historical CLI/model hashes were not saved.
-New evaluation uses a fresh directory, a shared explicit tokenizer, raw token IDs,
-stop metadata, and model/protocol hashes; existing results are never reused.
-
-Paired strict transitions: **601 wrong→right**, **6 right→wrong**.
-Of the gains, 427 had a format-invalid Base answer.
-See [five real examples](results/examples/CASES_CN.md), [evaluation protocol](docs/evaluation.md),
-and [中文误差分析](docs/evaluation_cn.md). Final-answer success does not certify the full reasoning trace.
-
-## Reproducibility and limitations
-
-- No exact/whitespace-normalized Train overlap in this evaluation subset; full Test has one whitespace-normalized duplicate.
-- Six questions appeared in earlier project development evaluations: this is not an entirely unseen confirmation set.
-- Current archive hashes do **not** prove historical evaluation weight identity.
-- Historical token counts/EOS/finish reasons are unavailable; missing answer tags are not a measured truncation rate.
-- The local archive lacks optimizer/RNG state; exact training resume requires a separate complete checkpoint.
-- New training/evaluation GPU paths have not been executed in this packaging run.
-
-See [limitations](docs/limitations.md), [provenance](docs/provenance.md),
-[CPU validation record](results/metrics/validation.json), and [release checklist](docs/GITHUB_PLAN.md).
+The repository includes records, manifests, source mappings and CPU tests for the core functions and evaluation safeguards.
+The evaluated subset has no exact/whitespace-normalized Train overlap and contains six previously used development questions.
+[Reproducibility](docs/reproducibility.md), [limitations](docs/limitations.md) and [provenance](docs/provenance.md) document historical identity, environment, checkpoint contents and GPU-validation boundaries.
 
 ## Acknowledgements
 
-Stanford CS336 Spring 2025 A5, Qwen, PyTorch, Transformers, vLLM, and the mathematical
-grader contributors. Course scaffolding, the third-party grader, and pretrained
-weights are not claimed as original work. See [NOTICE](NOTICE.md) and
-[license notes](LICENSE_NOTES.md). This is a single-turn mathematical RL project,
-not a tool-using Agent RL system or a complete A5 submission.
+Built upon Stanford CS336 Spring 2025 A5, Qwen2.5-Math, PyTorch, vLLM, Transformers and the attributed third-party mathematical grader.
+Course scaffolding, the grader and pretrained weights retain their original attribution; see [NOTICE](NOTICE.md) and [license notes](LICENSE_NOTES.md).
+The project focuses on single-turn mathematical RL post-training; its implemented scope and future extensions are documented in [limitations](docs/limitations.md).
