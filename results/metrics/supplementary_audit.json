@@ -1,0 +1,31 @@
+{
+  "n": 1024,
+  "base": {
+    "strict_correct": 148,
+    "strict_format_valid": 409,
+    "mode_answer_tag": 720,
+    "strict_or_extracted_correct": 437,
+    "newly_recovered": 289,
+    "recovered_from_answer_tag": 159,
+    "recovered_format_valid": 33,
+    "mode_boxed": 186,
+    "recovered_from_boxed": 118,
+    "recovered_format_invalid": 256,
+    "mode_answer_cue": 27,
+    "recovered_from_answer_cue": 12,
+    "mode_unresolved": 91
+  },
+  "grpo": {
+    "strict_correct": 743,
+    "strict_format_valid": 930,
+    "mode_answer_tag": 932,
+    "strict_or_extracted_correct": 744,
+    "mode_unresolved": 87,
+    "mode_boxed": 5,
+    "newly_recovered": 1,
+    "recovered_from_boxed": 1,
+    "recovered_format_invalid": 1
+  },
+  "strict_gains": 601,
+  "strict_gains_base_format_invalid": 427
+}

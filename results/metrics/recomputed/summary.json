@@ -1,0 +1,66 @@
+{
+  "n": 1024,
+  "evaluation_checkpoint_step_label": 105,
+  "historical_evaluation_weight_identity": "UNVERIFIED",
+  "models": {
+    "base": {
+      "strict_correct": 148,
+      "strict_reward": 0.14453125,
+      "format_valid": 409.0,
+      "format_rate": 0.3994140625,
+      "format_valid_strict_failure": 261.0,
+      "supplementary_audit_count": 437,
+      "supplementary_audit_rate": 0.4267578125,
+      "automatically_recovered": 289,
+      "missing_answer_close": 334,
+      "response_char_median": 564.0,
+      "token_cap_rate": "UNKNOWN: historical token IDs/counts/finish reasons not saved"
+    },
+    "grpo": {
+      "strict_correct": 743,
+      "strict_reward": 0.7255859375,
+      "format_valid": 930.0,
+      "format_rate": 0.908203125,
+      "format_valid_strict_failure": 187.0,
+      "supplementary_audit_count": 744,
+      "supplementary_audit_rate": 0.7265625,
+      "automatically_recovered": 1,
+      "missing_answer_close": 94,
+      "response_char_median": 1168.5,
+      "token_cap_rate": "UNKNOWN: historical token IDs/counts/finish reasons not saved"
+    }
+  },
+  "strict_delta_pp": 58.10546875,
+  "supplementary_delta_pp_NOT_OFFICIAL": 29.98046875,
+  "paired": {
+    "wrong_to_right": 601,
+    "right_to_wrong": 6,
+    "both_correct": 142.0,
+    "both_wrong": 275,
+    "gains_base_format_invalid": 427
+  },
+  "training": {
+    "logged_updates": 109,
+    "metric_rows": 109,
+    "responses_through_evaluated_step": 26880,
+    "first10_mean_reward": 0.159765625,
+    "last10_mean_reward_through_evaluated_step": 0.7,
+    "recorded_step_seconds_through_evaluated_step": 11505.78,
+    "step_timer_excludes": [
+      "initial model load",
+      "post-update export",
+      "checkpoint save",
+      "interruptions"
+    ],
+    "grad_norm_max_through_evaluated_step": 0.9923813939094543,
+    "clipped_updates_through_evaluated_step": 0
+  },
+  "sources": {
+    "results/metrics/train_metrics.jsonl": "4a621531ccbe87e7dbdd6bfca22641c1afd82ee18105f92fd2cdf7dae3b3c64a",
+    "results/records/base.jsonl": "a768e0a924f35925f458cec6d43f254a8eda21e595ec4667d5e62a0578eb70ae",
+    "results/records/grpo.jsonl": "82d77c62e79d2d18a08e164aef544e5419c26f869fb7a0cb37cade76ee4362c6",
+    "results/records/cases.json": "8b5024daf95f7ae17d1eb6df068775355e5c007503b62eecc468cc7704529bb8",
+    "results/records/automatic_recovery_candidates.jsonl": "25e6074f531d98757c48621ac994d3db7aa3af3134e5aa756ffc45a5f6b0d5cb"
+  },
+  "scope": "Stored historical strict scores reaggregated; automatic extraction estimates are not official math accuracy or human-reviewed scores"
+}

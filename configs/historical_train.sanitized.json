@@ -1,0 +1,21 @@
+{
+  "model": "<LOCAL_BASE_MODEL>",
+  "seed": 42,
+  "rollout_batch_size": 256,
+  "group_size": 8,
+  "gradient_accumulation_steps": 128,
+  "prompt_template": "src/grpo_posttraining/prompts/r1_zero.prompt",
+  "learning_rate": 1e-05,
+  "loss_type": "reinforce_with_baseline",
+  "normalize_by_std": true,
+  "dataset": "ModelScope MATH-lighteval aggregate train (7500 rows, filtered invalid answers)",
+  "excluded_row_indices": [
+    888,
+    1011,
+    5341,
+    5343
+  ],
+  "eligible_rows": 7496,
+  "train_parquet": "<LOCAL_MATH_TRAIN_PARQUET>",
+  "train_sha256": "eca6e667f4305dd5e5ba09b4fd55e7f3174a0fbe361cdfd4c44758b593a76933"
+}

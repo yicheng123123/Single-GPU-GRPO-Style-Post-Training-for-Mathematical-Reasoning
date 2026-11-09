@@ -1,0 +1,13 @@
+{
+  "code": {
+    "file": "a5_code_results_backup.tar.gz",
+    "sha256": "52f4fd7b70f4b481bd12fc3b93c653b8552f48be3bdb9555ca0b123f2e8c13f1",
+    "sidecar_match": true,
+    "regular_files": 302
+  },
+  "legacy": {
+    "file": "a5_experiment_records_20261106.tar.gz",
+    "sha256": "4a7e9eaca8ffcf2d9f5cdf78ad0754d5540b214c42bb8987d102ec7e27c35023"
+  },
+  "upstream_commit": "UNKNOWN: archived git metadata files are empty"
+}

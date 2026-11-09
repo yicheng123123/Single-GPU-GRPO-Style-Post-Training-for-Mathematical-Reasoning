@@ -1,0 +1,3 @@
+# Existing CPU environment only; no model stack is installed by the project CLI.
+matplotlib>=3.8
+pyarrow>=14

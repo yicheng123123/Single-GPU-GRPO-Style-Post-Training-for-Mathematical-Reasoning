@@ -1,0 +1,2 @@
+# CPU core tests additionally require an already installed PyTorch.
+pytest>=8

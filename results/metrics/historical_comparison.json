@@ -1,0 +1,20 @@
+{
+  "step": 105,
+  "n": 1024,
+  "metrics": {
+    "base": {
+      "reward": 0.14453125,
+      "answer_reward": 0.14453125,
+      "format_reward": 0.3994140625
+    },
+    "grpo": {
+      "reward": 0.7255859375,
+      "answer_reward": 0.7255859375,
+      "format_reward": 0.908203125
+    }
+  },
+  "accuracy_delta": 0.5810546875,
+  "fixed_wrong_to_right": 601,
+  "right_to_wrong": 6,
+  "cases_file": "results/records/cases.json"
+}

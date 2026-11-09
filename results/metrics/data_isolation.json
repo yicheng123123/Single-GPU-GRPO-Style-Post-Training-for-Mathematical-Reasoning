@@ -1,0 +1,100 @@
+{
+  "train_rows": 7500,
+  "test_rows": 5000,
+  "eligible_train_rows": 7496,
+  "invalid_train_indices": [
+    888,
+    1011,
+    5341,
+    5343
+  ],
+  "test_case_mismatches": [],
+  "exact_full_test_duplicate_indices": [],
+  "whitespace_normalized_full_test_duplicates": [
+    {
+      "test_index": 4656,
+      "train_indices": [
+        2948
+      ]
+    }
+  ],
+  "eval_train_exact_overlap": [],
+  "eval_train_normalized_overlap": [],
+  "eval_previous_development_overlap": [
+    297,
+    716,
+    1383,
+    1778,
+    3883,
+    4516
+  ],
+  "sources": {
+    "train_sha256": "eca6e667f4305dd5e5ba09b4fd55e7f3174a0fbe361cdfd4c44758b593a76933",
+    "test_sha256": "7dca8d6e41af88ecf82f2b5f36eb5530e083aaaa86ee325f62bd5c31535178c6"
+  },
+  "scope": "Exact/whitespace equality only; no semantic or pretraining decontamination claim",
+  "by_type": {
+    "Algebra": {
+      "n": 236,
+      "base_strict": 40.0,
+      "grpo_strict": 222.0
+    },
+    "Counting & Probability": {
+      "n": 91,
+      "base_strict": 16.0,
+      "grpo_strict": 63.0
+    },
+    "Geometry": {
+      "n": 89,
+      "base_strict": 13.0,
+      "grpo_strict": 51.0
+    },
+    "Intermediate Algebra": {
+      "n": 186,
+      "base_strict": 13.0,
+      "grpo_strict": 101.0
+    },
+    "Number Theory": {
+      "n": 106,
+      "base_strict": 17.0,
+      "grpo_strict": 71.0
+    },
+    "Prealgebra": {
+      "n": 199,
+      "base_strict": 43.0,
+      "grpo_strict": 168.0
+    },
+    "Precalculus": {
+      "n": 117,
+      "base_strict": 6.0,
+      "grpo_strict": 67.0
+    }
+  },
+  "by_level": {
+    "Level 1": {
+      "n": 95,
+      "base_strict": 27.0,
+      "grpo_strict": 89.0
+    },
+    "Level 2": {
+      "n": 178,
+      "base_strict": 36.0,
+      "grpo_strict": 159.0
+    },
+    "Level 5": {
+      "n": 271,
+      "base_strict": 21.0,
+      "grpo_strict": 131.0
+    },
+    "Level 4": {
+      "n": 252,
+      "base_strict": 28.0,
+      "grpo_strict": 167.0
+    },
+    "Level 3": {
+      "n": 228,
+      "base_strict": 36.0,
+      "grpo_strict": 197.0
+    }
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "archive_member": "experiments/grpo_single_gpu/metrics.jsonl",
+    "destination": "results/metrics/train_metrics.jsonl",
+    "original_sha256": "4a621531ccbe87e7dbdd6bfca22641c1afd82ee18105f92fd2cdf7dae3b3c64a",
+    "transformation": "byte-identical; review candidates are NOT human decisions"
+  },
+  {
+    "archive_member": "experiments/grpo_eval_step_0105/base.jsonl",
+    "destination": "results/records/base.jsonl",
+    "original_sha256": "a768e0a924f35925f458cec6d43f254a8eda21e595ec4667d5e62a0578eb70ae",
+    "transformation": "byte-identical; review candidates are NOT human decisions"
+  },
+  {
+    "archive_member": "experiments/grpo_eval_step_0105/grpo.jsonl",
+    "destination": "results/records/grpo.jsonl",
+    "original_sha256": "82d77c62e79d2d18a08e164aef544e5419c26f869fb7a0cb37cade76ee4362c6",
+    "transformation": "byte-identical; review candidates are NOT human decisions"
+  },
+  {
+    "archive_member": "experiments/grpo_eval_step_0105/format_free_audit.json",
+    "destination": "results/metrics/supplementary_audit.json",
+    "original_sha256": "e5ac102db625ac4e65dabc863837fd448000d675fc5b2e9c439220715fde2c2d",
+    "transformation": "byte-identical; review candidates are NOT human decisions"
+  },
+  {
+    "archive_member": "experiments/grpo_eval_step_0105/format_free_manual_review.jsonl",
+    "destination": "results/records/automatic_recovery_candidates.jsonl",
+    "original_sha256": "25e6074f531d98757c48621ac994d3db7aa3af3134e5aa756ffc45a5f6b0d5cb",
+    "transformation": "byte-identical; review candidates are NOT human decisions"
+  },
+  {
+    "archive_member": "train_grpo_a5.py",
+    "original_sha256": "7c856196316b73faa86d6fbd319deaeb884ff43bf4dfbb22927fa9be1158b719",
+    "private_original": ".local/originals/a5/train_grpo_a5.py"
+  },
+  {
+    "archive_member": "tests/adapters.py",
+    "original_sha256": "99adf0ae517bf64d55342d4e3e02d72cd22cce81b09e0e74eadb98921e0aa424",
+    "private_original": ".local/originals/a5/tests/adapters.py"
+  },
+  {
+    "archive_member": "eval_grpo_a5.py",
+    "original_sha256": "645ce9c6ffd22543fe6ca8fa34f4bb09fa0c28455be548918538a84b65dc5712",
+    "private_original": ".local/originals/a5/eval_grpo_a5.py"
+  },
+  {
+    "archive_member": "audit_grpo_answers.py",
+    "original_sha256": "cb10eb4030425afbdcf0c8ca6786af1b182ce7c2c0d4b036bd2064de4cbe0028",
+    "private_original": ".local/originals/a5/audit_grpo_answers.py"
+  },
+  {
+    "archive_member": "cs336_alignment/drgrpo_grader.py",
+    "original_sha256": "f88b29b0e76b3c28f969cb8b2f945e01b70aed2753306445d30822a192c54ec7",
+    "private_original": ".local/originals/a5/cs336_alignment/drgrpo_grader.py"
+  },
+  {
+    "archive_member": "cs336_alignment/prompts/r1_zero.prompt",
+    "original_sha256": "56213732da87e12ace60a2b88a16df0af18280fb0563a957cbecc938a6a2ac0e",
+    "private_original": ".local/originals/a5/cs336_alignment/prompts/r1_zero.prompt"
+  }
+]

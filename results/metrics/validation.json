@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-09",
+  "test_command": "python -B -m pytest -q --basetemp=.local/pytest-temp-v2 -p no:cacheprovider",
+  "tests": {
+    "passed": 34,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 11.17
+  },
+  "environment": {
+    "torch": "2.5.1+cu121",
+    "pytest": "9.1.1",
+    "matplotlib": "3.8.4",
+    "numpy": "2.0.2",
+    "pyarrow": "25.0.1",
+    "transformers": "5.15.1",
+    "tokenizers": "0.22.2"
+  },
+  "gpu_used": false,
+  "gpu_probed": false,
+  "model_loaded": false,
+  "training_run": false,
+  "generation_run": false,
+  "source_preservation": "11 core source segments unchanged; grader copied byte-identically",
+  "optional_full_symbolic_regrading": "NOT_RUN: missing math-verify/latex2sympy2-extended/pylatexenc; PyPI install rejected",
+  "new_gpu_wrappers": "NOT_EXECUTED; CPU gates/manifests tested",
+  "original_course_test_suite": "NOT_RUN; current suite is separate and uses no pretrained models"
+}

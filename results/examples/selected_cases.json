@@ -1,0 +1,107 @@
+[
+  {
+    "dataset_index": 177,
+    "category": "strict_gain",
+    "problem": "The shortest distance from the circle $x^2 + y^2 = 4x + 8y$ to the point $(5,-2)$ can be written in the form $\\sqrt{m}$, where $m$ is an integer. Find $m$.",
+    "ground_truth": "5",
+    "base_final_section": "$25$",
+    "grpo_final_section": "5",
+    "base_scores": {
+      "reward": 0.0,
+      "answer_reward": 0.0,
+      "format_reward": 1.0
+    },
+    "grpo_scores": {
+      "reward": 1.0,
+      "answer_reward": 1.0,
+      "format_reward": 1.0
+    },
+    "base_record_line": 35,
+    "grpo_record_line": 35,
+    "interpretation": "Selected qualitative case, not a random sample; final-answer correctness does not certify the full reasoning trace."
+  },
+  {
+    "dataset_index": 193,
+    "category": "strict_gain",
+    "problem": "A rectangular patio has an area of $180$ square feet and a perimeter of $54$ feet. What is the length of the diagonal (in feet) squared?",
+    "ground_truth": "369",
+    "base_final_section": "361",
+    "grpo_final_section": "369",
+    "base_scores": {
+      "reward": 0.0,
+      "answer_reward": 0.0,
+      "format_reward": 1.0
+    },
+    "grpo_scores": {
+      "reward": 1.0,
+      "answer_reward": 1.0,
+      "format_reward": 1.0
+    },
+    "base_record_line": 40,
+    "grpo_record_line": 40,
+    "interpretation": "Selected qualitative case, not a random sample; final-answer correctness does not certify the full reasoning trace."
+  },
+  {
+    "dataset_index": 77,
+    "category": "base_explicit_answer_format_failure",
+    "problem": "For what value of $x$ will $\\frac{2x-1}{2x+2}$ and $\\frac{x-3}{x-1}$ be equal?",
+    "ground_truth": "-7",
+    "base_final_section": "$x = -7$",
+    "grpo_final_section": "\\(-7\\)",
+    "base_scores": {
+      "reward": 0.0,
+      "answer_reward": 0.0,
+      "format_reward": 0.0
+    },
+    "grpo_scores": {
+      "reward": 1.0,
+      "answer_reward": 1.0,
+      "format_reward": 1.0
+    },
+    "base_record_line": 14,
+    "grpo_record_line": 14,
+    "interpretation": "Selected qualitative case, not a random sample; final-answer correctness does not certify the full reasoning trace."
+  },
+  {
+    "dataset_index": 523,
+    "category": "base_explicit_answer_format_failure",
+    "problem": "Evaluate $\\log_{\\sqrt{5}} 125\\sqrt{5}$.",
+    "ground_truth": "7",
+    "base_final_section": "7",
+    "grpo_final_section": "7",
+    "base_scores": {
+      "reward": 0.0,
+      "answer_reward": 0.0,
+      "format_reward": 0.0
+    },
+    "grpo_scores": {
+      "reward": 1.0,
+      "answer_reward": 1.0,
+      "format_reward": 1.0
+    },
+    "base_record_line": 101,
+    "grpo_record_line": 101,
+    "interpretation": "Selected qualitative case, not a random sample; final-answer correctness does not certify the full reasoning trace."
+  },
+  {
+    "dataset_index": 3155,
+    "category": "grpo_remaining_error",
+    "problem": "Find the sum of the smallest and largest prime factors of $10101$.",
+    "ground_truth": "40",
+    "base_final_section": "$40$",
+    "grpo_final_section": "26",
+    "base_scores": {
+      "reward": 1.0,
+      "answer_reward": 1.0,
+      "format_reward": 1.0
+    },
+    "grpo_scores": {
+      "reward": 0.0,
+      "answer_reward": 0.0,
+      "format_reward": 1.0
+    },
+    "base_record_line": 622,
+    "grpo_record_line": 622,
+    "interpretation": "Selected qualitative case, not a random sample; final-answer correctness does not certify the full reasoning trace."
+  }
+]

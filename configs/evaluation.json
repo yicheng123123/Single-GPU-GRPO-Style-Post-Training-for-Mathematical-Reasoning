@@ -1,0 +1,15 @@
+{
+  "n": 1,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "min_tokens": 4,
+  "max_tokens": 1024,
+  "stop": [
+    "</answer>"
+  ],
+  "include_stop_str_in_output": true,
+  "seed": 2026,
+  "dtype": "bfloat16",
+  "max_model_len": 4096,
+  "scope": "New run protocol; not authentication of historical CLI flags"
+}

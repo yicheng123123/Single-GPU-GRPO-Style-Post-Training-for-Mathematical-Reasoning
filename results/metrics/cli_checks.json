@@ -1,0 +1,41 @@
+{
+  "checks": [
+    {
+      "command": "python scripts/project.py check-config",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/project.py doctor",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/project.py report --help",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/project.py figures --help",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/project.py examples --help",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/project.py audit-data --help",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/project.py evaluate --help",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/project.py compare-runs --help",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/project.py train --help",
+      "exit_code": 0
+    }
+  ],
+  "gpu_operations_executed": false
+}

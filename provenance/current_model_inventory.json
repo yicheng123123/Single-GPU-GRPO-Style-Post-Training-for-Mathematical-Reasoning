@@ -1,0 +1,58 @@
+{
+  "archive": "a5_step0105_model.tar",
+  "archive_sha256": "05e6fa8d44743c3adc94b1db85294800acbf9071aac3fc823db53df35d695704",
+  "members": [
+    {
+      "member": "experiments/grpo_single_gpu/checkpoints/step_0105/model/chat_template.jinja",
+      "bytes": 2513,
+      "sha256": "c564d12c9977b8942423753b0c409a11f50142508ced170e9fe1c2f5b803cf70"
+    },
+    {
+      "member": "experiments/grpo_single_gpu/checkpoints/step_0105/model/config.json",
+      "bytes": 1390,
+      "sha256": "878ea527277c5b7905a0217d09009c9883ece2b86965a37597a9de62a42cb8bc"
+    },
+    {
+      "member": "experiments/grpo_single_gpu/checkpoints/step_0105/model/generation_config.json",
+      "bytes": 139,
+      "sha256": "b9c7db969a66eb1b0bdec913124f92ceabaec624630bbced7778b8f3452a2bee"
+    },
+    {
+      "member": "experiments/grpo_single_gpu/checkpoints/step_0105/model/model.safetensors",
+      "bytes": 6174895536,
+      "sha256": "70cc0f8d34b25d07f57253ba00a07d52dd7d1fd568b0b941aa2049cae249c489"
+    },
+    {
+      "member": "experiments/grpo_single_gpu/checkpoints/step_0105/model/tokenizer.json",
+      "bytes": 11421892,
+      "sha256": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8"
+    },
+    {
+      "member": "experiments/grpo_single_gpu/checkpoints/step_0105/model/tokenizer_config.json",
+      "bytes": 695,
+      "sha256": "cbea7bca9904d56693d2226b00fd564e3be053609d1e50f8f1885510f0f6e790"
+    }
+  ],
+  "tensors": {
+    "tensor_count": 338,
+    "stored_elements": 1543714304,
+    "dtypes": {
+      "F32": 338
+    }
+  },
+  "model_architecture": {
+    "model_type": "qwen2",
+    "hidden_size": 1536,
+    "num_hidden_layers": 28,
+    "vocab_size": 151936,
+    "eos_token_id": 151643
+  },
+  "historical_evaluation_weight_identity": "UNVERIFIED: no contemporaneous weight hash",
+  "exact_resume_from_this_archive": false,
+  "missing_training_state": [
+    "optimizer state",
+    "CPU RNG",
+    "GPU RNG"
+  ],
+  "scope": "Current local bytes only; no model loaded or inference attempted"
+}

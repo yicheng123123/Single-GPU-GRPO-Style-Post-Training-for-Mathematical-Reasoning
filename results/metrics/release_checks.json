@@ -1,0 +1,16 @@
+{
+  "prospective_public_files": 78,
+  "text_files_scanned": 73,
+  "files_over_100MiB": [],
+  "banned_artifacts": [],
+  "secret_pattern_hits": [],
+  "private_path_hits": [],
+  "broken_markdown_links": [],
+  "A1_integrity": {
+    "checked": true,
+    "tracked_files": 73,
+    "changed": []
+  },
+  "scope": "Pattern and path checks only; not a complete security or copyright certification",
+  "passed": true
+}

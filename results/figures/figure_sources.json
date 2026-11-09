@@ -1,0 +1,18 @@
+{
+  "source_hashes": {
+    "results/metrics/train_metrics.jsonl": "4a621531ccbe87e7dbdd6bfca22641c1afd82ee18105f92fd2cdf7dae3b3c64a",
+    "results/records/base.jsonl": "a768e0a924f35925f458cec6d43f254a8eda21e595ec4667d5e62a0578eb70ae",
+    "results/records/grpo.jsonl": "82d77c62e79d2d18a08e164aef544e5419c26f869fb7a0cb37cade76ee4362c6",
+    "results/records/cases.json": "8b5024daf95f7ae17d1eb6df068775355e5c007503b62eecc468cc7704529bb8",
+    "results/records/automatic_recovery_candidates.jsonl": "25e6074f531d98757c48621ac994d3db7aa3af3134e5aa756ffc45a5f6b0d5cb"
+  },
+  "plots": [
+    "training_reward",
+    "strict_reward",
+    "supplementary_audit",
+    "format_compliance",
+    "error_transition"
+  ],
+  "smoothing": "training only: trailing up to 10 steps",
+  "new_model_runs": 0
+}

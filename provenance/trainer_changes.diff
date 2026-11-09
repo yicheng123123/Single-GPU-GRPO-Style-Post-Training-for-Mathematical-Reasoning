@@ -1,0 +1,97 @@
+--- archive/train_grpo_a5.py
++++ src/grpo_posttraining/trainer.py
+@@ -111,8 +111,8 @@
+     import torch
+     folder = run_dir / 'checkpoints' / f'step_{completed_steps:04d}'
+     staging = folder.with_name(folder.name + '_staging')
+-    if staging.exists():
+-        shutil.rmtree(staging)
++    if staging.exists() or folder.exists():
++        raise FileExistsError('Preserve existing checkpoint/staging directory: ' + str(folder))
+     staging.mkdir(parents=True)
+     model.save_pretrained(staging / 'model', safe_serialization=True)
+     tokenizer.save_pretrained(staging / 'model')
+@@ -122,15 +122,9 @@
+         'cpu_rng': torch.get_rng_state(),
+         'gpu_rng': torch.cuda.get_rng_state(0),
+     }, staging / 'training_state.pt')
+-    if folder.exists():
+-        shutil.rmtree(folder)
+     os.replace(staging, folder)
+     _atomic_json(run_dir / 'latest_checkpoint.json', {'checkpoint': str(folder), 'completed_steps': completed_steps})
+-    # Retain only the two latest fully committed checkpoints. A checkpoint can
+-    # occupy several GiB; keeping all 200 steps would exhaust notebook storage.
+-    folders = sorted((run_dir / 'checkpoints').glob('step_[0-9][0-9][0-9][0-9]'))
+-    for stale in folders[:-1]:
+-        shutil.rmtree(stale)
++    # Maintained runner preserves all full checkpoints; budget disk space explicitly.
+     print(f"Full resume checkpoint: {folder}", flush=True)
+ 
+ 
+@@ -138,8 +132,8 @@
+     import torch
+     from datasets import load_dataset
+     from transformers import AutoTokenizer
+-    from cs336_alignment.drgrpo_grader import r1_zero_reward_fn, extract_boxed_answer
+-    from tests.adapters import (
++    from grpo_posttraining.grader import r1_zero_reward_fn, extract_boxed_answer
++    from grpo_posttraining.core import (
+         run_compute_group_normalized_rewards,
+         run_tokenize_prompt_and_output,
+         run_get_response_log_probs,
+@@ -158,6 +152,9 @@
+         raise ValueError('This first on-policy baseline intentionally keeps the 256/8/128 instructor defaults.')
+ 
+     run_dir = Path(args.run_dir).resolve()
++    allowed = Path(__file__).resolve().parents[2] / '.local/runs'
++    if not run_dir.is_relative_to(allowed.resolve()) or run_dir == allowed.resolve():
++        raise ValueError('Training outputs must be an individual project .local/runs directory')
+     run_dir.mkdir(parents=True, exist_ok=True)
+     (run_dir / 'rollouts').mkdir(exist_ok=True)
+     template = Path(args.prompt_template).read_text(encoding='utf-8')
+@@ -240,13 +237,18 @@
+     if args.resume:
+         # Any rollout at/after the checkpoint boundary may have been generated
+         # by an uncheckpointed policy before interruption: never reuse it.
++        recovery = run_dir / 'recovery' / f'from_{completed:04d}_{time.time_ns()}'
++        recovery.mkdir(parents=True)
+         for old_result in (run_dir / 'rollouts').glob('step_*_responses.json'):
+             try:
+                 old_step = int(old_result.name.split('_')[1])
+             except (ValueError, IndexError):
+                 continue
+             if old_step >= completed:
+-                old_result.unlink()
++                shutil.move(str(old_result), str(recovery / old_result.name))
++                old_request = old_result.with_name(old_result.name.replace('_responses', '_request'))
++                if old_request.exists():
++                    shutil.move(str(old_request), str(recovery / old_request.name))
+         trusted_state = torch.load(ckpt / 'training_state.pt', map_location='cpu', weights_only=False)
+         if trusted_state['completed_steps'] != completed:
+             raise RuntimeError('Checkpoint metadata disagreement')
+@@ -260,6 +262,7 @@
+         # Those are no longer part of the resumed, reproducible training run.
+         metrics = run_dir / 'metrics.jsonl'
+         if metrics.exists():
++            shutil.copy2(metrics, recovery / 'metrics_before_resume.jsonl')
+             kept = []
+             for line in metrics.read_text(encoding='utf-8').splitlines():
+                 item = json.loads(line)
+@@ -291,7 +294,7 @@
+         torch.cuda.empty_cache()
+         if not result.exists():
+             print(f'[step {step}] Generating {args.rollout_batch_size} responses on GPU 0', flush=True)
+-            subprocess.run([sys.executable, str(Path(__file__).resolve()), '_rollout',
++            subprocess.run([sys.executable, '-m', 'grpo_posttraining.trainer', '_rollout',
+                             '--payload', str(request), '--result', str(result)], check=True)
+         responses_obj = json.loads(result.read_text(encoding='utf-8'))
+         if (responses_obj['step'] != step or responses_obj['dataset_indices'] != indices
+@@ -411,7 +414,7 @@
+             parser.error('_rollout needs --payload and --result')
+         _rollout_worker(args.payload, args.result)
+     else:
+-        _training_main(args)
++        raise RuntimeError('Use the guarded scripts/project.py train entrypoint')
+ 
+ 
+ if __name__ == '__main__':

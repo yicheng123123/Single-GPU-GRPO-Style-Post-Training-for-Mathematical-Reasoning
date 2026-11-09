@@ -1,0 +1,112 @@
+[
+  {
+    "function": "run_tokenize_prompt_and_output",
+    "source_member": "tests/adapters.py",
+    "source_first_line": 12,
+    "source_last_line": 43,
+    "destination": "src/grpo_posttraining/core.py",
+    "destination_first_line": 14,
+    "ast_unchanged": true,
+    "source_segment_sha256": "0fbda38c297c820d1ace1be53c54d4a50406071159404d360beb878aa2ad1025"
+  },
+  {
+    "function": "run_compute_group_normalized_rewards",
+    "source_member": "tests/adapters.py",
+    "source_first_line": 49,
+    "source_last_line": 85,
+    "destination": "src/grpo_posttraining/core.py",
+    "destination_first_line": 47,
+    "ast_unchanged": true,
+    "source_segment_sha256": "ccc6ce9677b924dcc70291859528a67ec5ff6a643d6d58a934797e52833d29b8"
+  },
+  {
+    "function": "run_compute_entropy",
+    "source_member": "tests/adapters.py",
+    "source_first_line": 88,
+    "source_last_line": 92,
+    "destination": "src/grpo_posttraining/core.py",
+    "destination_first_line": 85,
+    "ast_unchanged": true,
+    "source_segment_sha256": "5c2ef0b8cb60e52d376dea921e2df54cdf6694973c3ac0d9fb04b206dca33e71"
+  },
+  {
+    "function": "run_get_response_log_probs",
+    "source_member": "tests/adapters.py",
+    "source_first_line": 96,
+    "source_last_line": 132,
+    "destination": "src/grpo_posttraining/core.py",
+    "destination_first_line": 91,
+    "ast_unchanged": true,
+    "source_segment_sha256": "5a93398fe9dcce57ecaca7e17a924469c17f409b6bcb7a9cad54fb05ced61dd0"
+  },
+  {
+    "function": "run_compute_naive_policy_gradient_loss",
+    "source_member": "tests/adapters.py",
+    "source_first_line": 135,
+    "source_last_line": 151,
+    "destination": "src/grpo_posttraining/core.py",
+    "destination_first_line": 129,
+    "ast_unchanged": true,
+    "source_segment_sha256": "99155532de3ffa31a44f1a66d4b1f56ac7b31a63c2bd6dc5bc563d1a281f6ed0"
+  },
+  {
+    "function": "run_compute_grpo_clip_loss",
+    "source_member": "tests/adapters.py",
+    "source_first_line": 153,
+    "source_last_line": 184,
+    "destination": "src/grpo_posttraining/core.py",
+    "destination_first_line": 147,
+    "ast_unchanged": true,
+    "source_segment_sha256": "5291f7a3015a0f10e62ee5e935ba73247c721aa01e5bab917d10f378b96938a8"
+  },
+  {
+    "function": "run_compute_policy_gradient_loss",
+    "source_member": "tests/adapters.py",
+    "source_first_line": 187,
+    "source_last_line": 223,
+    "destination": "src/grpo_posttraining/core.py",
+    "destination_first_line": 180,
+    "ast_unchanged": true,
+    "source_segment_sha256": "12313d217565366625f494f59dd3b503d4de32b72d19b8215978dd0b0077792c"
+  },
+  {
+    "function": "run_masked_mean",
+    "source_member": "tests/adapters.py",
+    "source_first_line": 226,
+    "source_last_line": 248,
+    "destination": "src/grpo_posttraining/core.py",
+    "destination_first_line": 218,
+    "ast_unchanged": true,
+    "source_segment_sha256": "515b7a4762a50fc06574be2508d65f46f59992bea2535f8e3f79d0b200d4a8f1"
+  },
+  {
+    "function": "run_sft_microbatch_train_step",
+    "source_member": "tests/adapters.py",
+    "source_first_line": 251,
+    "source_last_line": 263,
+    "destination": "src/grpo_posttraining/core.py",
+    "destination_first_line": 242,
+    "ast_unchanged": true,
+    "source_segment_sha256": "1d6d5a18a2090a62f51bee0f58d377164fdb025d952b91ac0d5daf105386112d"
+  },
+  {
+    "function": "run_grpo_microbatch_train_step",
+    "source_member": "tests/adapters.py",
+    "source_first_line": 266,
+    "source_last_line": 316,
+    "destination": "src/grpo_posttraining/core.py",
+    "destination_first_line": 256,
+    "ast_unchanged": true,
+    "source_segment_sha256": "5abdfef150fca85028618999816ec541254ca693f2e38c977c51e9d139c568e0"
+  },
+  {
+    "function": "run_masked_normalize",
+    "source_member": "tests/adapters.py",
+    "source_first_line": 319,
+    "source_last_line": 344,
+    "destination": "src/grpo_posttraining/core.py",
+    "destination_first_line": 308,
+    "ast_unchanged": true,
+    "source_segment_sha256": "15a82f7c5a1610ad368fd94cacd1be00ed9e2910db29d87478e6d8d86b2ba77d"
+  }
+]

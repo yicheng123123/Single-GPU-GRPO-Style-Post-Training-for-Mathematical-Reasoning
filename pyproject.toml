@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "single-gpu-grpo-posttraining"
+version = "0.1.0"
+description = "Auditable CS336 A5 extension: single-GPU GRPO-style mathematical post-training"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = []
+
+[project.optional-dependencies]
+analysis = ["matplotlib>=3.8", "pyarrow>=14"]
+test = ["pytest>=8"]
+
+[project.urls]
+Repository = "https://github.com/yicheng123123/Single-GPU-GRPO-Style-Post-Training-for-Mathematical-Reasoning"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+grpo_posttraining = ["prompts/*.prompt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
